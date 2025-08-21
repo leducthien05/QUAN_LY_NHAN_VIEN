@@ -16,7 +16,7 @@ namespace QUAN_LY_NHAN_VIEN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDangNhap());
+            Application.Run(new FormDashboard());
         }
     }
 }
