@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QUAN_LY_NHAN_VIEN
+namespace QUAN_LY_NHAN_VIEN.View
 {
-    public partial class FormDashboard: Form
+    public partial class UC_TQNS: UserControl
     {
-        public FormDashboard()
+        public UC_TQNS()
         {
             InitializeComponent();
         }
 
-        private void FormDashboard_Load(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }
