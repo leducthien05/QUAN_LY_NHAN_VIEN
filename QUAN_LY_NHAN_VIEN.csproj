@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUAN_LY_NHAN_VIENDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_PhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_PhongBan.Designer.cs">
+      <DependentUpon>UC_PhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_TQNS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\UC_PhongBan.resx">
+      <DependentUpon>UC_PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_TQNS.resx">
       <DependentUpon>UC_TQNS.cs</DependentUpon>
     </EmbeddedResource>

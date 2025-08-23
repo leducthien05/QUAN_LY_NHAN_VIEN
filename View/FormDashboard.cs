@@ -28,5 +28,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             uc.Dock = DockStyle.Fill;           // Fill hết panel
             panelBody.Controls.Add(uc);
         }
+
+        private void tổngQuanPhòngBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_PhongBan TQPB = new UC_PhongBan();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            TQPB.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(TQPB);
+        }
     }
 }
