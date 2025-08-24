@@ -36,5 +36,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             TQPB.Dock = DockStyle.Fill;           // Fill hết panel
             panelBody.Controls.Add(TQPB);
         }
+
+        private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_DSNV DSNV = new UC_DSNV();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            DSNV.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(DSNV);
+        }
     }
 }

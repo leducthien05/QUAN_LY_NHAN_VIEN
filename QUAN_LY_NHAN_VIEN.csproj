@@ -73,6 +73,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUAN_LY_NHAN_VIENDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_DSNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_DSNV.Designer.cs">
+      <DependentUpon>UC_DSNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_PhongBan.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -100,6 +106,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\UC_DSNV.resx">
+      <DependentUpon>UC_DSNV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_PhongBan.resx">
       <DependentUpon>UC_PhongBan.cs</DependentUpon>
     </EmbeddedResource>
