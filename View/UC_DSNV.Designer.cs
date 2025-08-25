@@ -85,8 +85,8 @@
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1784, 728);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -101,7 +101,7 @@
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.Location = new System.Drawing.Point(1500, 130);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(281, 37);
+            this.guna2Button6.Size = new System.Drawing.Size(281, 70);
             this.guna2Button6.TabIndex = 14;
             this.guna2Button6.Text = "In";
             // 
@@ -116,7 +116,7 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Location = new System.Drawing.Point(1166, 130);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(328, 37);
+            this.guna2Button5.Size = new System.Drawing.Size(328, 70);
             this.guna2Button5.TabIndex = 13;
             this.guna2Button5.Text = "Xuất Excel";
             // 
@@ -131,7 +131,7 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.Location = new System.Drawing.Point(836, 130);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(324, 37);
+            this.guna2Button4.Size = new System.Drawing.Size(324, 70);
             this.guna2Button4.TabIndex = 12;
             this.guna2Button4.Text = "Xóa";
             // 
@@ -146,7 +146,7 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Location = new System.Drawing.Point(499, 130);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(331, 37);
+            this.guna2Button3.Size = new System.Drawing.Size(331, 70);
             this.guna2Button3.TabIndex = 11;
             this.guna2Button3.Text = "Sửa";
             // 
@@ -161,7 +161,7 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Location = new System.Drawing.Point(153, 130);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(340, 37);
+            this.guna2Button2.Size = new System.Drawing.Size(340, 70);
             this.guna2Button2.TabIndex = 10;
             this.guna2Button2.Text = "Tìm";
             // 
@@ -275,7 +275,7 @@
             this.label2.Location = new System.Drawing.Point(3, 79);
             this.label2.Name = "label2";
             this.tableLayoutPanel1.SetRowSpan(this.label2, 2);
-            this.label2.Size = new System.Drawing.Size(144, 91);
+            this.label2.Size = new System.Drawing.Size(144, 124);
             this.label2.TabIndex = 15;
             this.label2.Text = "Hành Động";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -297,11 +297,11 @@
             this.HanHopDongDSNV});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewDSNV, 6);
             this.dataGridViewDSNV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewDSNV.Location = new System.Drawing.Point(3, 173);
+            this.dataGridViewDSNV.Location = new System.Drawing.Point(3, 206);
             this.dataGridViewDSNV.Name = "dataGridViewDSNV";
             this.dataGridViewDSNV.RowHeadersWidth = 62;
             this.dataGridViewDSNV.RowTemplate.Height = 28;
-            this.dataGridViewDSNV.Size = new System.Drawing.Size(1778, 552);
+            this.dataGridViewDSNV.Size = new System.Drawing.Size(1778, 519);
             this.dataGridViewDSNV.TabIndex = 16;
             // 
             // MaNVDSNV
