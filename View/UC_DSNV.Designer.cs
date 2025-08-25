@@ -60,12 +60,12 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 346F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 337F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 330F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 334F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 287F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 308F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 293F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 297F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 255F));
             this.tableLayoutPanel1.Controls.Add(this.guna2Button6, 5, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button5, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2Button4, 3, 2);
@@ -81,13 +81,14 @@
             this.tableLayoutPanel1.Controls.Add(this.dataGridViewDSNV, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1784, 728);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1586, 582);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // guna2Button6
@@ -99,9 +100,10 @@
             this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(1500, 130);
+            this.guna2Button6.Location = new System.Drawing.Point(1334, 103);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(281, 70);
+            this.guna2Button6.Size = new System.Drawing.Size(249, 57);
             this.guna2Button6.TabIndex = 14;
             this.guna2Button6.Text = "In";
             // 
@@ -114,9 +116,10 @@
             this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(1166, 130);
+            this.guna2Button5.Location = new System.Drawing.Point(1037, 103);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(328, 70);
+            this.guna2Button5.Size = new System.Drawing.Size(291, 57);
             this.guna2Button5.TabIndex = 13;
             this.guna2Button5.Text = "Xuất Excel";
             // 
@@ -129,9 +132,10 @@
             this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(836, 130);
+            this.guna2Button4.Location = new System.Drawing.Point(744, 103);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(324, 70);
+            this.guna2Button4.Size = new System.Drawing.Size(287, 57);
             this.guna2Button4.TabIndex = 12;
             this.guna2Button4.Text = "Xóa";
             // 
@@ -144,9 +148,10 @@
             this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(499, 130);
+            this.guna2Button3.Location = new System.Drawing.Point(444, 103);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(331, 70);
+            this.guna2Button3.Size = new System.Drawing.Size(294, 57);
             this.guna2Button3.TabIndex = 11;
             this.guna2Button3.Text = "Sửa";
             // 
@@ -159,9 +164,10 @@
             this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(153, 130);
+            this.guna2Button2.Location = new System.Drawing.Point(136, 103);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(340, 70);
+            this.guna2Button2.Size = new System.Drawing.Size(302, 57);
             this.guna2Button2.TabIndex = 10;
             this.guna2Button2.Text = "Tìm";
             // 
@@ -177,12 +183,12 @@
             this.textBoxMaNVDSNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxMaNVDSNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxMaNVDSNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxMaNVDSNV.Location = new System.Drawing.Point(500, 84);
-            this.textBoxMaNVDSNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxMaNVDSNV.Location = new System.Drawing.Point(445, 67);
+            this.textBoxMaNVDSNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxMaNVDSNV.Name = "textBoxMaNVDSNV";
             this.textBoxMaNVDSNV.PlaceholderText = "Mã nhân viên";
             this.textBoxMaNVDSNV.SelectedText = "";
-            this.textBoxMaNVDSNV.Size = new System.Drawing.Size(329, 38);
+            this.textBoxMaNVDSNV.Size = new System.Drawing.Size(292, 30);
             this.textBoxMaNVDSNV.TabIndex = 9;
             // 
             // comboxTrangThaiDSNV
@@ -196,9 +202,10 @@
             this.comboxTrangThaiDSNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboxTrangThaiDSNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboxTrangThaiDSNV.ItemHeight = 30;
-            this.comboxTrangThaiDSNV.Location = new System.Drawing.Point(1500, 82);
+            this.comboxTrangThaiDSNV.Location = new System.Drawing.Point(1334, 65);
+            this.comboxTrangThaiDSNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboxTrangThaiDSNV.Name = "comboxTrangThaiDSNV";
-            this.comboxTrangThaiDSNV.Size = new System.Drawing.Size(281, 36);
+            this.comboxTrangThaiDSNV.Size = new System.Drawing.Size(249, 36);
             this.comboxTrangThaiDSNV.TabIndex = 8;
             // 
             // label1
@@ -210,7 +217,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1778, 79);
+            this.label1.Size = new System.Drawing.Size(1580, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách nhân viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,13 +233,13 @@
             this.textBoxNameNVDSNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxNameNVDSNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxNameNVDSNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxNameNVDSNV.Location = new System.Drawing.Point(154, 84);
-            this.textBoxNameNVDSNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxNameNVDSNV.Location = new System.Drawing.Point(137, 67);
+            this.textBoxNameNVDSNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxNameNVDSNV.Name = "textBoxNameNVDSNV";
             this.textBoxNameNVDSNV.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.textBoxNameNVDSNV.PlaceholderText = "Tên nhân viên";
             this.textBoxNameNVDSNV.SelectedText = "";
-            this.textBoxNameNVDSNV.Size = new System.Drawing.Size(338, 38);
+            this.textBoxNameNVDSNV.Size = new System.Drawing.Size(300, 30);
             this.textBoxNameNVDSNV.TabIndex = 4;
             // 
             // comboxPhongBanDSNV
@@ -246,9 +253,10 @@
             this.comboxPhongBanDSNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboxPhongBanDSNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboxPhongBanDSNV.ItemHeight = 30;
-            this.comboxPhongBanDSNV.Location = new System.Drawing.Point(836, 82);
+            this.comboxPhongBanDSNV.Location = new System.Drawing.Point(744, 65);
+            this.comboxPhongBanDSNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboxPhongBanDSNV.Name = "comboxPhongBanDSNV";
-            this.comboxPhongBanDSNV.Size = new System.Drawing.Size(324, 36);
+            this.comboxPhongBanDSNV.Size = new System.Drawing.Size(287, 36);
             this.comboxPhongBanDSNV.TabIndex = 6;
             // 
             // comboxChucVuDSNV
@@ -261,9 +269,10 @@
             this.comboxChucVuDSNV.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.comboxChucVuDSNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.comboxChucVuDSNV.ItemHeight = 30;
-            this.comboxChucVuDSNV.Location = new System.Drawing.Point(1166, 82);
+            this.comboxChucVuDSNV.Location = new System.Drawing.Point(1037, 65);
+            this.comboxChucVuDSNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboxChucVuDSNV.Name = "comboxChucVuDSNV";
-            this.comboxChucVuDSNV.Size = new System.Drawing.Size(328, 36);
+            this.comboxChucVuDSNV.Size = new System.Drawing.Size(291, 36);
             this.comboxChucVuDSNV.TabIndex = 7;
             // 
             // label2
@@ -272,10 +281,10 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 79);
+            this.label2.Location = new System.Drawing.Point(3, 63);
             this.label2.Name = "label2";
             this.tableLayoutPanel1.SetRowSpan(this.label2, 2);
-            this.label2.Size = new System.Drawing.Size(144, 124);
+            this.label2.Size = new System.Drawing.Size(127, 99);
             this.label2.TabIndex = 15;
             this.label2.Text = "Hành Động";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -297,11 +306,12 @@
             this.HanHopDongDSNV});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewDSNV, 6);
             this.dataGridViewDSNV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewDSNV.Location = new System.Drawing.Point(3, 206);
+            this.dataGridViewDSNV.Location = new System.Drawing.Point(3, 164);
+            this.dataGridViewDSNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridViewDSNV.Name = "dataGridViewDSNV";
             this.dataGridViewDSNV.RowHeadersWidth = 62;
             this.dataGridViewDSNV.RowTemplate.Height = 28;
-            this.dataGridViewDSNV.Size = new System.Drawing.Size(1778, 519);
+            this.dataGridViewDSNV.Size = new System.Drawing.Size(1580, 416);
             this.dataGridViewDSNV.TabIndex = 16;
             // 
             // MaNVDSNV
@@ -405,11 +415,12 @@
             // 
             // UC_DSNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_DSNV";
-            this.Size = new System.Drawing.Size(1784, 728);
+            this.Size = new System.Drawing.Size(1586, 582);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSNV)).EndInit();
