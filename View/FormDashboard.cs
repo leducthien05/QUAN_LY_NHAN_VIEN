@@ -58,6 +58,12 @@ namespace QUAN_LY_NHAN_VIEN.View
 
         }
 
-        
+        private void danhSáchPhòngBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_DSPB DSPB = new UC_DSPB();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            DSPB.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(DSPB);
+        }
     }
 }

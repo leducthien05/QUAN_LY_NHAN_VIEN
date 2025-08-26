@@ -139,6 +139,7 @@
             this.danhSáchPhòngBanToolStripMenuItem.Name = "danhSáchPhòngBanToolStripMenuItem";
             this.danhSáchPhòngBanToolStripMenuItem.Size = new System.Drawing.Size(289, 34);
             this.danhSáchPhòngBanToolStripMenuItem.Text = "Danh sách phòng ban";
+            this.danhSáchPhòngBanToolStripMenuItem.Click += new System.EventHandler(this.danhSáchPhòngBanToolStripMenuItem_Click);
             // 
             // thêmPhòngBanToolStripMenuItem
             // 
