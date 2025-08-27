@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonXoaPhongDSPB = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonXuaPhongDSPB = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonLamMoiDSPB = new Guna.UI2.WinForms.Guna2Button();
+            this.textBoxMaPhongDSPB = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonTimKiemDSPB = new Guna.UI2.WinForms.Guna2Button();
             this.textBoxTenPhongDSPB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.textBoxMaPhongDSPB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.buttonLamMoiDSPB = new Guna.UI2.WinForms.Guna2Button();
             this.buttonThemPhongDSPB = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonXuaPhongDSPB = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonXoaPhongDSPB = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridViewDSPB = new System.Windows.Forms.DataGridView();
             this.ID_DSPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaPBDSPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenPhongDSPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LienHeDSPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MoTaDSPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSPB)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 281F));
             this.tableLayoutPanel1.Controls.Add(this.buttonXoaPhongDSPB, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.buttonXuaPhongDSPB, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.buttonLamMoiDSPB, 3, 1);
@@ -78,6 +78,77 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1784, 728);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // buttonXoaPhongDSPB
+            // 
+            this.buttonXoaPhongDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonXoaPhongDSPB.BorderColor = System.Drawing.Color.Gray;
+            this.buttonXoaPhongDSPB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonXoaPhongDSPB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonXoaPhongDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonXoaPhongDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonXoaPhongDSPB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.buttonXoaPhongDSPB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoaPhongDSPB.ForeColor = System.Drawing.Color.Black;
+            this.buttonXoaPhongDSPB.Location = new System.Drawing.Point(1343, 89);
+            this.buttonXoaPhongDSPB.Name = "buttonXoaPhongDSPB";
+            this.buttonXoaPhongDSPB.Size = new System.Drawing.Size(121, 54);
+            this.buttonXoaPhongDSPB.TabIndex = 7;
+            this.buttonXoaPhongDSPB.Text = "XOÁ";
+            // 
+            // buttonXuaPhongDSPB
+            // 
+            this.buttonXuaPhongDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonXuaPhongDSPB.BorderColor = System.Drawing.Color.Gray;
+            this.buttonXuaPhongDSPB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonXuaPhongDSPB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonXuaPhongDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonXuaPhongDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonXuaPhongDSPB.FillColor = System.Drawing.Color.Lime;
+            this.buttonXuaPhongDSPB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXuaPhongDSPB.ForeColor = System.Drawing.Color.Black;
+            this.buttonXuaPhongDSPB.Location = new System.Drawing.Point(1179, 89);
+            this.buttonXuaPhongDSPB.Name = "buttonXuaPhongDSPB";
+            this.buttonXuaPhongDSPB.Size = new System.Drawing.Size(133, 54);
+            this.buttonXuaPhongDSPB.TabIndex = 6;
+            this.buttonXuaPhongDSPB.Text = "SỬA";
+            // 
+            // buttonLamMoiDSPB
+            // 
+            this.buttonLamMoiDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonLamMoiDSPB.BorderColor = System.Drawing.Color.Gray;
+            this.buttonLamMoiDSPB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonLamMoiDSPB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonLamMoiDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonLamMoiDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonLamMoiDSPB.FillColor = System.Drawing.SystemColors.ControlDark;
+            this.buttonLamMoiDSPB.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLamMoiDSPB.ForeColor = System.Drawing.Color.Black;
+            this.buttonLamMoiDSPB.Location = new System.Drawing.Point(878, 89);
+            this.buttonLamMoiDSPB.Name = "buttonLamMoiDSPB";
+            this.buttonLamMoiDSPB.Size = new System.Drawing.Size(116, 54);
+            this.buttonLamMoiDSPB.TabIndex = 4;
+            this.buttonLamMoiDSPB.Text = "LÀM MỚI";
+            // 
+            // textBoxMaPhongDSPB
+            // 
+            this.textBoxMaPhongDSPB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxMaPhongDSPB.DefaultText = "";
+            this.textBoxMaPhongDSPB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.textBoxMaPhongDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.textBoxMaPhongDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxMaPhongDSPB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.textBoxMaPhongDSPB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxMaPhongDSPB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxMaPhongDSPB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBoxMaPhongDSPB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.textBoxMaPhongDSPB.Location = new System.Drawing.Point(593, 91);
+            this.textBoxMaPhongDSPB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxMaPhongDSPB.Name = "textBoxMaPhongDSPB";
+            this.textBoxMaPhongDSPB.PlaceholderText = "Nhập mã phòng";
+            this.textBoxMaPhongDSPB.SelectedText = "";
+            this.textBoxMaPhongDSPB.Size = new System.Drawing.Size(278, 50);
+            this.textBoxMaPhongDSPB.TabIndex = 3;
             // 
             // label1
             // 
@@ -130,58 +201,6 @@
             this.textBoxTenPhongDSPB.Size = new System.Drawing.Size(399, 50);
             this.textBoxTenPhongDSPB.TabIndex = 2;
             // 
-            // guna2ContextMenuStrip1
-            // 
-            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
-            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // textBoxMaPhongDSPB
-            // 
-            this.textBoxMaPhongDSPB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxMaPhongDSPB.DefaultText = "";
-            this.textBoxMaPhongDSPB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.textBoxMaPhongDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.textBoxMaPhongDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxMaPhongDSPB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.textBoxMaPhongDSPB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxMaPhongDSPB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxMaPhongDSPB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.textBoxMaPhongDSPB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textBoxMaPhongDSPB.Location = new System.Drawing.Point(593, 91);
-            this.textBoxMaPhongDSPB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBoxMaPhongDSPB.Name = "textBoxMaPhongDSPB";
-            this.textBoxMaPhongDSPB.PlaceholderText = "Nhập mã phòng";
-            this.textBoxMaPhongDSPB.SelectedText = "";
-            this.textBoxMaPhongDSPB.Size = new System.Drawing.Size(278, 50);
-            this.textBoxMaPhongDSPB.TabIndex = 3;
-            // 
-            // buttonLamMoiDSPB
-            // 
-            this.buttonLamMoiDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonLamMoiDSPB.BorderColor = System.Drawing.Color.Gray;
-            this.buttonLamMoiDSPB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonLamMoiDSPB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonLamMoiDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonLamMoiDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonLamMoiDSPB.FillColor = System.Drawing.SystemColors.ControlDark;
-            this.buttonLamMoiDSPB.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLamMoiDSPB.ForeColor = System.Drawing.Color.Black;
-            this.buttonLamMoiDSPB.Location = new System.Drawing.Point(878, 89);
-            this.buttonLamMoiDSPB.Name = "buttonLamMoiDSPB";
-            this.buttonLamMoiDSPB.Size = new System.Drawing.Size(118, 54);
-            this.buttonLamMoiDSPB.TabIndex = 4;
-            this.buttonLamMoiDSPB.Text = "LÀM MỚI";
-            // 
             // buttonThemPhongDSPB
             // 
             this.buttonThemPhongDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -198,40 +217,6 @@
             this.buttonThemPhongDSPB.Size = new System.Drawing.Size(133, 54);
             this.buttonThemPhongDSPB.TabIndex = 5;
             this.buttonThemPhongDSPB.Text = "THÊM";
-            // 
-            // buttonXuaPhongDSPB
-            // 
-            this.buttonXuaPhongDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonXuaPhongDSPB.BorderColor = System.Drawing.Color.Gray;
-            this.buttonXuaPhongDSPB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonXuaPhongDSPB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonXuaPhongDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonXuaPhongDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonXuaPhongDSPB.FillColor = System.Drawing.Color.Lime;
-            this.buttonXuaPhongDSPB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonXuaPhongDSPB.ForeColor = System.Drawing.Color.Black;
-            this.buttonXuaPhongDSPB.Location = new System.Drawing.Point(1179, 89);
-            this.buttonXuaPhongDSPB.Name = "buttonXuaPhongDSPB";
-            this.buttonXuaPhongDSPB.Size = new System.Drawing.Size(133, 54);
-            this.buttonXuaPhongDSPB.TabIndex = 6;
-            this.buttonXuaPhongDSPB.Text = "SỬA";
-            // 
-            // buttonXoaPhongDSPB
-            // 
-            this.buttonXoaPhongDSPB.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonXoaPhongDSPB.BorderColor = System.Drawing.Color.Gray;
-            this.buttonXoaPhongDSPB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonXoaPhongDSPB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonXoaPhongDSPB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonXoaPhongDSPB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonXoaPhongDSPB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.buttonXoaPhongDSPB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonXoaPhongDSPB.ForeColor = System.Drawing.Color.Black;
-            this.buttonXoaPhongDSPB.Location = new System.Drawing.Point(1343, 89);
-            this.buttonXoaPhongDSPB.Name = "buttonXoaPhongDSPB";
-            this.buttonXoaPhongDSPB.Size = new System.Drawing.Size(121, 54);
-            this.buttonXoaPhongDSPB.TabIndex = 7;
-            this.buttonXoaPhongDSPB.Text = "XOÁ";
             // 
             // dataGridViewDSPB
             // 
@@ -295,6 +280,21 @@
             this.MoTaDSPB.Name = "MoTaDSPB";
             this.MoTaDSPB.ReadOnly = true;
             this.MoTaDSPB.Width = 85;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // UC_DSPB
             // 

@@ -97,6 +97,12 @@
     <Compile Include="View\UC_ThemNV.Designer.cs">
       <DependentUpon>UC_ThemNV.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_ThemPhongBan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ThemPhongBan.Designer.cs">
+      <DependentUpon>UC_ThemPhongBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_TQNS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ThemNV.resx">
       <DependentUpon>UC_ThemNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ThemPhongBan.resx">
+      <DependentUpon>UC_ThemPhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_TQNS.resx">
       <DependentUpon>UC_TQNS.cs</DependentUpon>
