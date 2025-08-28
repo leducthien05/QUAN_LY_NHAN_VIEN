@@ -46,7 +46,6 @@
             this.textAddEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxDiaChiAddNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.dateNgayVaoLamAddNV = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.comBoxPhongBanAddNV = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -57,6 +56,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonAddNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.buttonHuyAddNV = new Guna.UI2.WinForms.Guna2Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -85,8 +85,6 @@
             this.tableLayoutPanel1.Controls.Add(this.textAddEmail, 5, 2);
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBoxDiaChiAddNV, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.dateNgayVaoLamAddNV, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.label11, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.comBoxPhongBanAddNV, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.label12, 2, 4);
@@ -94,6 +92,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label13, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.comBoxTrangThaiAddNV, 5, 4);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label10, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.dateNgayVaoLamAddNV, 3, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -151,7 +151,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(3, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(70, 43);
@@ -163,7 +163,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(157, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 43);
@@ -193,7 +193,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(3, 140);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(236, 47);
@@ -220,7 +220,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 90);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(236, 50);
@@ -241,7 +241,7 @@
             this.textBoxAddNameNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxAddNameNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxAddNameNV.Location = new System.Drawing.Point(246, 94);
-            this.textBoxAddNameNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAddNameNV.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAddNameNV.Name = "textBoxAddNameNV";
             this.textBoxAddNameNV.PlaceholderText = "Họ và tên";
             this.textBoxAddNameNV.SelectedText = "";
@@ -252,7 +252,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(569, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 50);
@@ -280,7 +280,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(569, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(158, 47);
@@ -301,7 +301,7 @@
             this.textBoxAddSDT.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxAddSDT.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxAddSDT.Location = new System.Drawing.Point(734, 144);
-            this.textBoxAddSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAddSDT.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAddSDT.Name = "textBoxAddSDT";
             this.textBoxAddSDT.PlaceholderText = "Nhập số";
             this.textBoxAddSDT.SelectedText = "";
@@ -312,7 +312,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(1022, 140);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(166, 47);
@@ -333,7 +333,7 @@
             this.textAddEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textAddEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textAddEmail.Location = new System.Drawing.Point(1195, 144);
-            this.textAddEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textAddEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textAddEmail.Name = "textAddEmail";
             this.textAddEmail.PlaceholderText = "example@gmail.com";
             this.textAddEmail.SelectedText = "";
@@ -344,7 +344,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(3, 187);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(236, 51);
@@ -354,7 +354,6 @@
             // 
             // textBoxDiaChiAddNV
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.textBoxDiaChiAddNV, 2);
             this.textBoxDiaChiAddNV.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxDiaChiAddNV.DefaultText = "";
             this.textBoxDiaChiAddNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -366,38 +365,26 @@
             this.textBoxDiaChiAddNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxDiaChiAddNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxDiaChiAddNV.Location = new System.Drawing.Point(246, 191);
-            this.textBoxDiaChiAddNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDiaChiAddNV.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDiaChiAddNV.Name = "textBoxDiaChiAddNV";
             this.textBoxDiaChiAddNV.PlaceholderText = "Địa chỉ";
             this.textBoxDiaChiAddNV.SelectedText = "";
-            this.textBoxDiaChiAddNV.Size = new System.Drawing.Size(480, 43);
+            this.textBoxDiaChiAddNV.Size = new System.Drawing.Size(316, 43);
             this.textBoxDiaChiAddNV.TabIndex = 15;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(733, 187);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(283, 51);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Ngày vào làm: ";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dateNgayVaoLamAddNV
             // 
             this.dateNgayVaoLamAddNV.Checked = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.dateNgayVaoLamAddNV, 2);
+            this.dateNgayVaoLamAddNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateNgayVaoLamAddNV.FillColor = System.Drawing.Color.WhiteSmoke;
             this.dateNgayVaoLamAddNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dateNgayVaoLamAddNV.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dateNgayVaoLamAddNV.Location = new System.Drawing.Point(1022, 189);
+            this.dateNgayVaoLamAddNV.Location = new System.Drawing.Point(733, 189);
             this.dateNgayVaoLamAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateNgayVaoLamAddNV.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateNgayVaoLamAddNV.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dateNgayVaoLamAddNV.Name = "dateNgayVaoLamAddNV";
-            this.dateNgayVaoLamAddNV.Size = new System.Drawing.Size(266, 46);
+            this.dateNgayVaoLamAddNV.Size = new System.Drawing.Size(283, 47);
             this.dateNgayVaoLamAddNV.TabIndex = 17;
             this.dateNgayVaoLamAddNV.Value = new System.DateTime(2025, 8, 25, 10, 6, 2, 62);
             // 
@@ -405,7 +392,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(3, 238);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(236, 46);
@@ -434,7 +421,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(569, 238);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(158, 46);
@@ -463,7 +450,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(1022, 238);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(166, 46);
@@ -474,6 +461,7 @@
             // comBoxTrangThaiAddNV
             // 
             this.comBoxTrangThaiAddNV.BackColor = System.Drawing.Color.Transparent;
+            this.comBoxTrangThaiAddNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.comBoxTrangThaiAddNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comBoxTrangThaiAddNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comBoxTrangThaiAddNV.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -484,7 +472,7 @@
             this.comBoxTrangThaiAddNV.Location = new System.Drawing.Point(1194, 240);
             this.comBoxTrangThaiAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comBoxTrangThaiAddNV.Name = "comBoxTrangThaiAddNV";
-            this.comBoxTrangThaiAddNV.Size = new System.Drawing.Size(261, 36);
+            this.comBoxTrangThaiAddNV.Size = new System.Drawing.Size(390, 36);
             this.comBoxTrangThaiAddNV.TabIndex = 24;
             // 
             // tableLayoutPanel2
@@ -507,6 +495,7 @@
             // 
             // buttonAddNhanVien
             // 
+            this.buttonAddNhanVien.BorderRadius = 10;
             this.buttonAddNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.buttonAddNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.buttonAddNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -523,6 +512,7 @@
             // 
             // buttonHuyAddNV
             // 
+            this.buttonHuyAddNV.BorderRadius = 10;
             this.buttonHuyAddNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.buttonHuyAddNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.buttonHuyAddNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -536,6 +526,18 @@
             this.buttonHuyAddNV.Size = new System.Drawing.Size(182, 50);
             this.buttonHuyAddNV.TabIndex = 1;
             this.buttonHuyAddNV.Text = "HỦY";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(569, 187);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 51);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Ngày vào làm: ";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // UC_ThemNV
             // 
@@ -574,7 +576,6 @@
         private Guna.UI2.WinForms.Guna2TextBox textAddEmail;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox textBoxDiaChiAddNV;
-        private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateNgayVaoLamAddNV;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2ComboBox comBoxPhongBanAddNV;
@@ -585,5 +586,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2Button buttonAddNhanVien;
         private Guna.UI2.WinForms.Guna2Button buttonHuyAddNV;
+        private System.Windows.Forms.Label label10;
     }
 }
