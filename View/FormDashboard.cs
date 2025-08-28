@@ -81,5 +81,34 @@ namespace QUAN_LY_NHAN_VIEN.View
             DSHD.Dock = DockStyle.Fill;           // Fill hết panel
             panelBody.Controls.Add(DSHD);
         }
+
+        private void thêmHợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_ThemMoiHD ThemMoiHD = new UC_ThemMoiHD();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            ThemMoiHD.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(ThemMoiHD);
+        }
+
+        private void bảngLươngNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_BangLuongNV BLNV = new UC_BangLuongNV();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            BLNV.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(BLNV);
+        }
+
+        private void tínhLươngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_TinhLuong TinhLuong = new UC_TinhLuong();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            TinhLuong.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(TinhLuong);
+        }
+
+        private void trangChủToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
