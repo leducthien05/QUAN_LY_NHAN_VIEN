@@ -93,6 +93,7 @@
             // 
             // guna2Button6
             // 
+            this.guna2Button6.BorderRadius = 10;
             this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -109,6 +110,7 @@
             // 
             // guna2Button5
             // 
+            this.guna2Button5.BorderRadius = 10;
             this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -125,6 +127,7 @@
             // 
             // guna2Button4
             // 
+            this.guna2Button4.BorderRadius = 10;
             this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -141,6 +144,7 @@
             // 
             // guna2Button3
             // 
+            this.guna2Button3.BorderRadius = 10;
             this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -157,6 +161,7 @@
             // 
             // guna2Button2
             // 
+            this.guna2Button2.BorderRadius = 10;
             this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -184,7 +189,7 @@
             this.textBoxMaNVDSNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxMaNVDSNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxMaNVDSNV.Location = new System.Drawing.Point(445, 67);
-            this.textBoxMaNVDSNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxMaNVDSNV.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMaNVDSNV.Name = "textBoxMaNVDSNV";
             this.textBoxMaNVDSNV.PlaceholderText = "Mã nhân viên";
             this.textBoxMaNVDSNV.SelectedText = "";
@@ -234,7 +239,7 @@
             this.textBoxNameNVDSNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.textBoxNameNVDSNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textBoxNameNVDSNV.Location = new System.Drawing.Point(137, 67);
-            this.textBoxNameNVDSNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNameNVDSNV.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNameNVDSNV.Name = "textBoxNameNVDSNV";
             this.textBoxNameNVDSNV.PlaceholderForeColor = System.Drawing.Color.LightGray;
             this.textBoxNameNVDSNV.PlaceholderText = "Tên nhân viên";
@@ -321,7 +326,7 @@
             this.MaNVDSNV.MinimumWidth = 8;
             this.MaNVDSNV.Name = "MaNVDSNV";
             this.MaNVDSNV.ReadOnly = true;
-            this.MaNVDSNV.Width = 694;
+            this.MaNVDSNV.Width = 150;
             // 
             // HoTenDSNV
             // 
@@ -330,7 +335,7 @@
             this.HoTenDSNV.MinimumWidth = 8;
             this.HoTenDSNV.Name = "HoTenDSNV";
             this.HoTenDSNV.ReadOnly = true;
-            this.HoTenDSNV.Width = 93;
+            this.HoTenDSNV.Width = 200;
             // 
             // NgaySinhDSNV
             // 
@@ -339,7 +344,7 @@
             this.NgaySinhDSNV.MinimumWidth = 8;
             this.NgaySinhDSNV.Name = "NgaySinhDSNV";
             this.NgaySinhDSNV.ReadOnly = true;
-            this.NgaySinhDSNV.Width = 114;
+            this.NgaySinhDSNV.Width = 120;
             // 
             // GioiTinhDSNV
             // 
@@ -348,7 +353,7 @@
             this.GioiTinhDSNV.MinimumWidth = 8;
             this.GioiTinhDSNV.Name = "GioiTinhDSNV";
             this.GioiTinhDSNV.ReadOnly = true;
-            this.GioiTinhDSNV.Width = 103;
+            this.GioiTinhDSNV.Width = 120;
             // 
             // DiaChiDSNV
             // 
@@ -357,7 +362,7 @@
             this.DiaChiDSNV.MinimumWidth = 8;
             this.DiaChiDSNV.Name = "DiaChiDSNV";
             this.DiaChiDSNV.ReadOnly = true;
-            this.DiaChiDSNV.Width = 93;
+            this.DiaChiDSNV.Width = 200;
             // 
             // SoDienThoaiDSNV
             // 
@@ -366,7 +371,7 @@
             this.SoDienThoaiDSNV.MinimumWidth = 8;
             this.SoDienThoaiDSNV.Name = "SoDienThoaiDSNV";
             this.SoDienThoaiDSNV.ReadOnly = true;
-            this.SoDienThoaiDSNV.Width = 138;
+            this.SoDienThoaiDSNV.Width = 120;
             // 
             // NgayVaoLamDSNV
             // 
@@ -375,7 +380,7 @@
             this.NgayVaoLamDSNV.MinimumWidth = 8;
             this.NgayVaoLamDSNV.Name = "NgayVaoLamDSNV";
             this.NgayVaoLamDSNV.ReadOnly = true;
-            this.NgayVaoLamDSNV.Width = 139;
+            this.NgayVaoLamDSNV.Width = 120;
             // 
             // PhongBanDSVN
             // 
@@ -384,7 +389,7 @@
             this.PhongBanDSVN.MinimumWidth = 8;
             this.PhongBanDSVN.Name = "PhongBanDSVN";
             this.PhongBanDSVN.ReadOnly = true;
-            this.PhongBanDSVN.Width = 122;
+            this.PhongBanDSVN.Width = 120;
             // 
             // ChucVuDSNV
             // 
@@ -393,7 +398,7 @@
             this.ChucVuDSNV.MinimumWidth = 8;
             this.ChucVuDSNV.Name = "ChucVuDSNV";
             this.ChucVuDSNV.ReadOnly = true;
-            this.ChucVuDSNV.Width = 102;
+            this.ChucVuDSNV.Width = 120;
             // 
             // TrangThaiDSNV
             // 
@@ -402,7 +407,7 @@
             this.TrangThaiDSNV.MinimumWidth = 8;
             this.TrangThaiDSNV.Name = "TrangThaiDSNV";
             this.TrangThaiDSNV.ReadOnly = true;
-            this.TrangThaiDSNV.Width = 116;
+            this.TrangThaiDSNV.Width = 120;
             // 
             // HanHopDongDSNV
             // 
@@ -411,7 +416,7 @@
             this.HanHopDongDSNV.MinimumWidth = 8;
             this.HanHopDongDSNV.Name = "HanHopDongDSNV";
             this.HanHopDongDSNV.ReadOnly = true;
-            this.HanHopDongDSNV.Width = 146;
+            this.HanHopDongDSNV.Width = 130;
             // 
             // UC_DSNV
             // 
