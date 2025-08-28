@@ -162,6 +162,7 @@
             this.danhSáchHợpĐồngToolStripMenuItem.Name = "danhSáchHợpĐồngToolStripMenuItem";
             this.danhSáchHợpĐồngToolStripMenuItem.Size = new System.Drawing.Size(281, 34);
             this.danhSáchHợpĐồngToolStripMenuItem.Text = "Danh sách hợp đồng";
+            this.danhSáchHợpĐồngToolStripMenuItem.Click += new System.EventHandler(this.danhSáchHợpĐồngToolStripMenuItem_Click);
             // 
             // thêmHợpĐồngToolStripMenuItem
             // 

@@ -73,5 +73,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             ThemPB.Dock = DockStyle.Fill;           // Fill hết panel
             panelBody.Controls.Add(ThemPB);
         }
+
+        private void danhSáchHợpĐồngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_DSHD DSHD = new UC_DSHD();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            DSHD.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(DSHD);
+        }
     }
 }
