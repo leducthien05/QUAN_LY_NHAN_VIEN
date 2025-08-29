@@ -54,7 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connect.cs" />
-    <Compile Include="Controller\TrangChu.cs" />
+    <Compile Include="Controller\TrangChu.controller.cs" />
+    <Compile Include="Model\QLNV.model.cs" />
     <Compile Include="Model\TrangChu.model.cs" />
     <Compile Include="View\FormDangNhap.cs">
       <SubType>Form</SubType>
@@ -129,6 +130,12 @@
     <Compile Include="View\UC_TinhLuong.Designer.cs">
       <DependentUpon>UC_TinhLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_TKNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_TKNV.Designer.cs">
+      <DependentUpon>UC_TKNV.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_TQNS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -176,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_TinhLuong.resx">
       <DependentUpon>UC_TinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_TKNV.resx">
+      <DependentUpon>UC_TKNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_TQNS.resx">
       <DependentUpon>UC_TQNS.cs</DependentUpon>

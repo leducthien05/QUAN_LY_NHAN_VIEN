@@ -108,6 +108,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 275F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1784, 728);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // tableLayoutPanel3
             // 
@@ -493,6 +494,7 @@
             this.buttonAddNhanVien.Size = new System.Drawing.Size(202, 64);
             this.buttonAddNhanVien.TabIndex = 0;
             this.buttonAddNhanVien.Text = "LƯU";
+            this.buttonAddNhanVien.Click += new System.EventHandler(this.buttonAddNhanVien_Click);
             // 
             // buttonHuyAddNV
             // 
@@ -547,6 +549,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_ThemNV";
             this.Size = new System.Drawing.Size(1784, 728);
+            this.Load += new System.EventHandler(this.UC_ThemNV_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);

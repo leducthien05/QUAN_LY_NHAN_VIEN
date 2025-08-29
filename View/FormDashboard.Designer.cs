@@ -85,7 +85,7 @@
             this.tổngQuanNhânSựToolStripMenuItem,
             this.tổngQuanPhòngBanToolStripMenuItem});
             this.trangChủToolStripMenuItem.Name = "trangChủToolStripMenuItem";
-            this.trangChủToolStripMenuItem.Size = new System.Drawing.Size(104, 30);
+            this.trangChủToolStripMenuItem.Size = new System.Drawing.Size(104, 32);
             this.trangChủToolStripMenuItem.Text = "Trang chủ";
             this.trangChủToolStripMenuItem.Click += new System.EventHandler(this.trangChủToolStripMenuItem_Click);
             // 
@@ -178,7 +178,7 @@
             this.bảngLươngNhânViênToolStripMenuItem,
             this.tínhLươngToolStripMenuItem});
             this.tàiKhoảnPhânQuyềnToolStripMenuItem.Name = "tàiKhoảnPhânQuyềnToolStripMenuItem";
-            this.tàiKhoảnPhânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(79, 30);
+            this.tàiKhoảnPhânQuyềnToolStripMenuItem.Size = new System.Drawing.Size(79, 32);
             this.tàiKhoảnPhânQuyềnToolStripMenuItem.Text = "Lương";
             // 
             // bảngLươngNhânViênToolStripMenuItem

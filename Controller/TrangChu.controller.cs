@@ -22,5 +22,11 @@ namespace QUAN_LY_NHAN_VIEN.Controller
         {
             return model.NhanVienChinhThuc();
         }
+
+        //Lấy số nhân viên thử việc
+        public int NhanVienThuViec()
+        {
+            return model.NhanVienThuViec();
+        }
     }
 }

@@ -2,9 +2,9 @@
 
 namespace QUAN_LY_NHAN_VIEN
 {
-    public static class Connect
+    public class Connect
     {
-        private static readonly string connectionString =
+        private static string connectionString =
             @"Data Source=DESKTOP-RG8L6LR\SQLEXPRESS01;
             Initial Catalog=QUAN_LY_NHAN_VIEN;
             Integrated Security=True;

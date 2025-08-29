@@ -65,7 +65,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 291F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 256F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 230F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 456F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.buttonTimBLNV, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBoxTenNV_BLNV, 1, 1);
@@ -198,7 +198,7 @@
             this.MaNV_BLNV.MinimumWidth = 8;
             this.MaNV_BLNV.Name = "MaNV_BLNV";
             this.MaNV_BLNV.ReadOnly = true;
-            this.MaNV_BLNV.Width = 139;
+            this.MaNV_BLNV.Width = 128;
             // 
             // HoTenNV_BLNV
             // 

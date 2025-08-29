@@ -16,5 +16,20 @@ namespace QUAN_LY_NHAN_VIEN.View
         {
             InitializeComponent();
         }
+
+        private void buttonAddNhanVien_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UC_ThemNV_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

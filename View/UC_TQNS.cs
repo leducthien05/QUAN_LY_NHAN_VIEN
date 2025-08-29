@@ -28,10 +28,12 @@ namespace QUAN_LY_NHAN_VIEN.View
                 // Lấy dữ liệu từ controller
                 int tongNV = controller.GetTongNhanVien();
                 int nvChinhThuc = controller.GetNhanVienChinhThuc();
+                int nvThoiVu = controller.NhanVienThuViec();
 
                 // Hiển thị lên label (label1, label2 bạn đổi theo thiết kế Designer)
                 txtTongNhanVien.Text = tongNV.ToString();
                 txtNVChinhThuc.Text = nvChinhThuc.ToString();
+                txtNVThoiVu.Text = nvThoiVu.ToString();
             }
             catch (Exception ex)
             {
