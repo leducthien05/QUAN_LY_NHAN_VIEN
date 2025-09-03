@@ -42,17 +42,17 @@
             this.comboxChucVuDSNV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewDSNV = new System.Windows.Forms.DataGridView();
-            this.MaNVDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTenDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgaySinhDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinhDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChiDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDienThoaiDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayVaoLamDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhongBanDSVN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucVuDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThaiDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HanHopDongDSNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayVaoLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayKetThuc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDSNV)).BeginInit();
             this.SuspendLayout();
@@ -298,17 +298,17 @@
             // 
             this.dataGridViewDSNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDSNV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaNVDSNV,
-            this.HoTenDSNV,
-            this.NgaySinhDSNV,
-            this.GioiTinhDSNV,
-            this.DiaChiDSNV,
-            this.SoDienThoaiDSNV,
-            this.NgayVaoLamDSNV,
-            this.PhongBanDSVN,
-            this.ChucVuDSNV,
-            this.TrangThaiDSNV,
-            this.HanHopDongDSNV});
+            this.MaNV,
+            this.HoTen,
+            this.NgaySinh,
+            this.GioiTinh,
+            this.DiaChi,
+            this.SoDienThoai,
+            this.NgayVaoLam,
+            this.TenPhong,
+            this.TenChucVu,
+            this.TrangThai,
+            this.NgayKetThuc});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridViewDSNV, 6);
             this.dataGridViewDSNV.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewDSNV.Location = new System.Drawing.Point(3, 164);
@@ -319,104 +319,104 @@
             this.dataGridViewDSNV.Size = new System.Drawing.Size(1580, 416);
             this.dataGridViewDSNV.TabIndex = 16;
             // 
-            // MaNVDSNV
+            // MaNV
             // 
-            this.MaNVDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.MaNVDSNV.HeaderText = "Mã nhân viên";
-            this.MaNVDSNV.MinimumWidth = 8;
-            this.MaNVDSNV.Name = "MaNVDSNV";
-            this.MaNVDSNV.ReadOnly = true;
-            this.MaNVDSNV.Width = 150;
+            this.MaNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.MinimumWidth = 8;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            this.MaNV.Width = 150;
             // 
-            // HoTenDSNV
+            // HoTen
             // 
-            this.HoTenDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.HoTenDSNV.HeaderText = "Họ tên";
-            this.HoTenDSNV.MinimumWidth = 8;
-            this.HoTenDSNV.Name = "HoTenDSNV";
-            this.HoTenDSNV.ReadOnly = true;
-            this.HoTenDSNV.Width = 200;
+            this.HoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.HoTen.HeaderText = "Họ tên";
+            this.HoTen.MinimumWidth = 8;
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            this.HoTen.Width = 200;
             // 
-            // NgaySinhDSNV
+            // NgaySinh
             // 
-            this.NgaySinhDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.NgaySinhDSNV.HeaderText = "Ngày sinh";
-            this.NgaySinhDSNV.MinimumWidth = 8;
-            this.NgaySinhDSNV.Name = "NgaySinhDSNV";
-            this.NgaySinhDSNV.ReadOnly = true;
-            this.NgaySinhDSNV.Width = 120;
+            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.NgaySinh.HeaderText = "Ngày sinh";
+            this.NgaySinh.MinimumWidth = 8;
+            this.NgaySinh.Name = "NgaySinh";
+            this.NgaySinh.ReadOnly = true;
+            this.NgaySinh.Width = 120;
             // 
-            // GioiTinhDSNV
+            // GioiTinh
             // 
-            this.GioiTinhDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.GioiTinhDSNV.HeaderText = "Giới tính";
-            this.GioiTinhDSNV.MinimumWidth = 8;
-            this.GioiTinhDSNV.Name = "GioiTinhDSNV";
-            this.GioiTinhDSNV.ReadOnly = true;
-            this.GioiTinhDSNV.Width = 120;
+            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 8;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 120;
             // 
-            // DiaChiDSNV
+            // DiaChi
             // 
-            this.DiaChiDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.DiaChiDSNV.HeaderText = "Địa chỉ";
-            this.DiaChiDSNV.MinimumWidth = 8;
-            this.DiaChiDSNV.Name = "DiaChiDSNV";
-            this.DiaChiDSNV.ReadOnly = true;
-            this.DiaChiDSNV.Width = 200;
+            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 8;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 200;
             // 
-            // SoDienThoaiDSNV
+            // SoDienThoai
             // 
-            this.SoDienThoaiDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.SoDienThoaiDSNV.HeaderText = "Số điện thoại";
-            this.SoDienThoaiDSNV.MinimumWidth = 8;
-            this.SoDienThoaiDSNV.Name = "SoDienThoaiDSNV";
-            this.SoDienThoaiDSNV.ReadOnly = true;
-            this.SoDienThoaiDSNV.Width = 120;
+            this.SoDienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.SoDienThoai.HeaderText = "Số điện thoại";
+            this.SoDienThoai.MinimumWidth = 8;
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.ReadOnly = true;
+            this.SoDienThoai.Width = 120;
             // 
-            // NgayVaoLamDSNV
+            // NgayVaoLam
             // 
-            this.NgayVaoLamDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.NgayVaoLamDSNV.HeaderText = "Ngày vào làm";
-            this.NgayVaoLamDSNV.MinimumWidth = 8;
-            this.NgayVaoLamDSNV.Name = "NgayVaoLamDSNV";
-            this.NgayVaoLamDSNV.ReadOnly = true;
-            this.NgayVaoLamDSNV.Width = 120;
+            this.NgayVaoLam.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.NgayVaoLam.HeaderText = "Ngày vào làm";
+            this.NgayVaoLam.MinimumWidth = 8;
+            this.NgayVaoLam.Name = "NgayVaoLam";
+            this.NgayVaoLam.ReadOnly = true;
+            this.NgayVaoLam.Width = 120;
             // 
-            // PhongBanDSVN
+            // TenPhong
             // 
-            this.PhongBanDSVN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.PhongBanDSVN.HeaderText = "Phòng ban";
-            this.PhongBanDSVN.MinimumWidth = 8;
-            this.PhongBanDSVN.Name = "PhongBanDSVN";
-            this.PhongBanDSVN.ReadOnly = true;
-            this.PhongBanDSVN.Width = 120;
+            this.TenPhong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TenPhong.HeaderText = "Phòng ban";
+            this.TenPhong.MinimumWidth = 8;
+            this.TenPhong.Name = "TenPhong";
+            this.TenPhong.ReadOnly = true;
+            this.TenPhong.Width = 120;
             // 
-            // ChucVuDSNV
+            // TenChucVu
             // 
-            this.ChucVuDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ChucVuDSNV.HeaderText = "Chức vụ";
-            this.ChucVuDSNV.MinimumWidth = 8;
-            this.ChucVuDSNV.Name = "ChucVuDSNV";
-            this.ChucVuDSNV.ReadOnly = true;
-            this.ChucVuDSNV.Width = 120;
+            this.TenChucVu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TenChucVu.HeaderText = "Chức vụ";
+            this.TenChucVu.MinimumWidth = 8;
+            this.TenChucVu.Name = "TenChucVu";
+            this.TenChucVu.ReadOnly = true;
+            this.TenChucVu.Width = 120;
             // 
-            // TrangThaiDSNV
+            // TrangThai
             // 
-            this.TrangThaiDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.TrangThaiDSNV.HeaderText = "Trạng thái";
-            this.TrangThaiDSNV.MinimumWidth = 8;
-            this.TrangThaiDSNV.Name = "TrangThaiDSNV";
-            this.TrangThaiDSNV.ReadOnly = true;
-            this.TrangThaiDSNV.Width = 120;
+            this.TrangThai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TrangThai.HeaderText = "Trạng thái";
+            this.TrangThai.MinimumWidth = 8;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.ReadOnly = true;
+            this.TrangThai.Width = 120;
             // 
-            // HanHopDongDSNV
+            // NgayKetThuc
             // 
-            this.HanHopDongDSNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.HanHopDongDSNV.HeaderText = "Hạn hợp đồng";
-            this.HanHopDongDSNV.MinimumWidth = 8;
-            this.HanHopDongDSNV.Name = "HanHopDongDSNV";
-            this.HanHopDongDSNV.ReadOnly = true;
-            this.HanHopDongDSNV.Width = 130;
+            this.NgayKetThuc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.NgayKetThuc.HeaderText = "Hạn hợp đồng";
+            this.NgayKetThuc.MinimumWidth = 8;
+            this.NgayKetThuc.Name = "NgayKetThuc";
+            this.NgayKetThuc.ReadOnly = true;
+            this.NgayKetThuc.Width = 130;
             // 
             // UC_DSNV
             // 
@@ -449,16 +449,16 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridViewDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaNVDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTenDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinhDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinhDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChiDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoaiDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayVaoLamDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PhongBanDSVN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ChucVuDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThaiDSNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HanHopDongDSNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDienThoai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayVaoLam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenChucVu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKetThuc;
     }
 }
