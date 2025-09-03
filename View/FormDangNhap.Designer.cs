@@ -1,4 +1,4 @@
-﻿namespace QUAN_LY_NHAN_VIEN
+﻿namespace QUAN_LY_NHAN_VIEN.View
 {
     partial class FormDangNhap
     {
@@ -41,6 +41,8 @@
             this.MatKhau = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Thoat = new Guna.UI2.WinForms.Guna2Button();
+            this.HienThiMK = new System.Windows.Forms.RadioButton();
+            this.quenMK = new System.Windows.Forms.LinkLabel();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -49,6 +51,8 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.quenMK);
+            this.guna2Panel1.Controls.Add(this.HienThiMK);
             this.guna2Panel1.Controls.Add(this.DangNhap);
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
@@ -72,6 +76,7 @@
             this.DangNhap.Size = new System.Drawing.Size(180, 54);
             this.DangNhap.TabIndex = 3;
             this.DangNhap.Text = "Đăng nhập";
+            this.DangNhap.Click += new System.EventHandler(this.DangNhap_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -198,10 +203,12 @@
             this.MatKhau.Location = new System.Drawing.Point(384, 373);
             this.MatKhau.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MatKhau.Name = "MatKhau";
+            this.MatKhau.PasswordChar = '*';
             this.MatKhau.PlaceholderText = "";
             this.MatKhau.SelectedText = "";
             this.MatKhau.Size = new System.Drawing.Size(744, 107);
             this.MatKhau.TabIndex = 6;
+            this.MatKhau.TextChanged += new System.EventHandler(this.MatKhau_TextChanged);
             // 
             // guna2PictureBox1
             // 
@@ -230,6 +237,28 @@
             this.Thoat.TabIndex = 0;
             this.Thoat.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // HienThiMK
+            // 
+            this.HienThiMK.AutoSize = true;
+            this.HienThiMK.Location = new System.Drawing.Point(1090, 590);
+            this.HienThiMK.Name = "HienThiMK";
+            this.HienThiMK.Size = new System.Drawing.Size(158, 24);
+            this.HienThiMK.TabIndex = 4;
+            this.HienThiMK.TabStop = true;
+            this.HienThiMK.Text = "Hiển thị mật khẩu";
+            this.HienThiMK.UseVisualStyleBackColor = true;
+            this.HienThiMK.CheckedChanged += new System.EventHandler(this.HienThiMK_CheckedChanged);
+            // 
+            // quenMK
+            // 
+            this.quenMK.AutoSize = true;
+            this.quenMK.Location = new System.Drawing.Point(1679, 590);
+            this.quenMK.Name = "quenMK";
+            this.quenMK.Size = new System.Drawing.Size(118, 20);
+            this.quenMK.TabIndex = 5;
+            this.quenMK.TabStop = true;
+            this.quenMK.Text = "Quên mật khẩu";
+            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -243,6 +272,7 @@
             this.Text = "FormDangNhap";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
@@ -264,6 +294,8 @@
         private Guna.UI2.WinForms.Guna2TextBox TenDangNhap;
         private Guna.UI2.WinForms.Guna2TextBox MaNV;
         private Guna.UI2.WinForms.Guna2TextBox MatKhau;
+        private System.Windows.Forms.LinkLabel quenMK;
+        private System.Windows.Forms.RadioButton HienThiMK;
     }
 }
 
