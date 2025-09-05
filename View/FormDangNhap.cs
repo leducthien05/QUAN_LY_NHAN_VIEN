@@ -44,19 +44,17 @@ namespace QUAN_LY_NHAN_VIEN.View
             {
                 conn.Open();
                 string TenDN = TenDangNhap.Text;
-                string MaNhanVien = MaNV.Text;
                 string Pass = MatKhau.Text;
 
-                string sql = "SELECT * FROM TaiKhoan WHERE MaNV = @MaNV AND MatKhau =  @MatKhau AND TenDangNhap = @TenDangNhap";
+                string sql = "SELECT * FROM TaiKhoan WHERE MatKhau =  @MatKhau AND TenDangNhap = @TenDangNhap";
                 SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@MaNV", MaNhanVien);
                 cmd.Parameters.AddWithValue("@MatKhau", Pass);
                 cmd.Parameters.AddWithValue("@TenDangNhap", TenDN);
 
                 SqlDataReader reader = cmd.ExecuteReader();
-                if (string.IsNullOrEmpty(TenDN) || string.IsNullOrEmpty(MaNhanVien) || string.IsNullOrEmpty(Pass))
+                if (string.IsNullOrEmpty(TenDN) || string.IsNullOrEmpty(Pass))
                 {
-                    MessageBox.Show("Vui lòng nhập đầy đủ Mã nhân viên, Tên đăng nhập và Mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập đầy đủ Tên đăng nhập và Mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 if (reader.HasRows)
@@ -73,7 +71,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 }
                 else
                 {
-                    MessageBox.Show("Mã nhân viên , Tên đăng nhập hoặc mật khẩu không đúng", "Thông báo");
+                    MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng", "Thông báo");
                 }
 
             }

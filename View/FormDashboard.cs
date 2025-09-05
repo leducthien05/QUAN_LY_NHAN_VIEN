@@ -110,5 +110,13 @@ namespace QUAN_LY_NHAN_VIEN.View
         {
 
         }
+
+        private void sửaThôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_SuaNV SuaNV = new UC_SuaNV();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            SuaNV.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(SuaNV);
+        }
     }
 }

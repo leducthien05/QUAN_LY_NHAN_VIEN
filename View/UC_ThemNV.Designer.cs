@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.MaNVAddNV = new System.Windows.Forms.TableLayoutPanel();
             this.radioNuAddNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,9 +57,13 @@
             this.buttonHuyAddNV = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
             this.dateNgayVaoLamAddNV = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label14 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.maNVAddMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.MaNVAddNV.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -72,7 +76,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 325F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 194F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 446F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.MaNVAddNV, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
@@ -94,41 +98,45 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.label10, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.dateNgayVaoLamAddNV, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label14, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 275F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1784, 728);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // tableLayoutPanel3
+            // MaNVAddNV
             // 
-            this.tableLayoutPanel3.ColumnCount = 4;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
-            this.tableLayoutPanel3.Controls.Add(this.radioNuAddNV, 3, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label8, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label9, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.raidoNamAddNV, 1, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(275, 176);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(358, 55);
-            this.tableLayoutPanel3.TabIndex = 9;
+            this.MaNVAddNV.ColumnCount = 4;
+            this.MaNVAddNV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.MaNVAddNV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
+            this.MaNVAddNV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.MaNVAddNV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.MaNVAddNV.Controls.Add(this.radioNuAddNV, 3, 0);
+            this.MaNVAddNV.Controls.Add(this.label8, 0, 0);
+            this.MaNVAddNV.Controls.Add(this.label9, 2, 0);
+            this.MaNVAddNV.Controls.Add(this.raidoNamAddNV, 1, 0);
+            this.MaNVAddNV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MaNVAddNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MaNVAddNV.Location = new System.Drawing.Point(275, 176);
+            this.MaNVAddNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaNVAddNV.Name = "MaNVAddNV";
+            this.MaNVAddNV.RowCount = 1;
+            this.MaNVAddNV.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.MaNVAddNV.Size = new System.Drawing.Size(358, 55);
+            this.MaNVAddNV.TabIndex = 9;
             // 
             // radioNuAddNV
             // 
@@ -401,6 +409,7 @@
             this.comBoxPhongBanAddNV.Name = "comBoxPhongBanAddNV";
             this.comBoxPhongBanAddNV.Size = new System.Drawing.Size(358, 36);
             this.comBoxPhongBanAddNV.TabIndex = 19;
+            this.comBoxPhongBanAddNV.SelectedIndexChanged += new System.EventHandler(this.comBoxPhongBanAddNV_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -541,6 +550,50 @@
             this.dateNgayVaoLamAddNV.TabIndex = 17;
             this.dateNgayVaoLamAddNV.Value = new System.DateTime(2025, 8, 25, 10, 6, 2, 62);
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(3, 355);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(266, 72);
+            this.label14.TabIndex = 26;
+            this.label14.Text = "Mã nhân viên: ";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.maNVAddMaNV, 0, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(275, 358);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(225, 66);
+            this.tableLayoutPanel4.TabIndex = 27;
+            // 
+            // maNVAddMaNV
+            // 
+            this.maNVAddMaNV.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.maNVAddMaNV.DefaultText = "";
+            this.maNVAddMaNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.maNVAddMaNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.maNVAddMaNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.maNVAddMaNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.maNVAddMaNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.maNVAddMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.maNVAddMaNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.maNVAddMaNV.Location = new System.Drawing.Point(4, 5);
+            this.maNVAddMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maNVAddMaNV.Name = "maNVAddMaNV";
+            this.maNVAddMaNV.PlaceholderText = "";
+            this.maNVAddMaNV.SelectedText = "";
+            this.maNVAddMaNV.Size = new System.Drawing.Size(217, 56);
+            this.maNVAddMaNV.TabIndex = 0;
+            // 
             // UC_ThemNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -552,9 +605,10 @@
             this.Load += new System.EventHandler(this.UC_ThemNV_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.MaNVAddNV.ResumeLayout(false);
+            this.MaNVAddNV.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -567,7 +621,7 @@
         private Guna.UI2.WinForms.Guna2TextBox textBoxAddNameNV;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateAddNgaySinh;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel MaNVAddNV;
         private Guna.UI2.WinForms.Guna2CustomRadioButton radioNuAddNV;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -576,7 +630,6 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox textBoxAddSDT;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox textAddEmail;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox textBoxDiaChiAddNV;
         private Guna.UI2.WinForms.Guna2DateTimePicker dateNgayVaoLamAddNV;
@@ -585,10 +638,14 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2ComboBox comBoxChuVuAddNV;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2ComboBox comBoxTrangThaiAddNV;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI2.WinForms.Guna2Button buttonAddNhanVien;
         private Guna.UI2.WinForms.Guna2Button buttonHuyAddNV;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2TextBox textAddEmail;
+        private Guna.UI2.WinForms.Guna2ComboBox comBoxTrangThaiAddNV;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private Guna.UI2.WinForms.Guna2TextBox maNVAddMaNV;
     }
 }

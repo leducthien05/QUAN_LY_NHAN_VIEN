@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connect.cs" />
+    <Compile Include="Controller\QLNV.controller.cs" />
     <Compile Include="Controller\TrangChu.controller.cs" />
     <Compile Include="Model\QLNV.model.cs" />
     <Compile Include="Model\TrangChu.model.cs" />
@@ -105,6 +106,12 @@
     </Compile>
     <Compile Include="View\UC_PhongBan.Designer.cs">
       <DependentUpon>UC_PhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_SuaNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_SuaNV.Designer.cs">
+      <DependentUpon>UC_SuaNV.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_ThemMoiHD.cs">
       <SubType>UserControl</SubType>
@@ -171,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_PhongBan.resx">
       <DependentUpon>UC_PhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_SuaNV.resx">
+      <DependentUpon>UC_SuaNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ThemMoiHD.resx">
       <DependentUpon>UC_ThemMoiHD.cs</DependentUpon>
