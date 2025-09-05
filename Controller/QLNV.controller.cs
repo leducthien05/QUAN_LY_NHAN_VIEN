@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace QUAN_LY_NHAN_VIEN.Controller
 {
@@ -48,7 +49,7 @@ namespace QUAN_LY_NHAN_VIEN.Controller
             return model.AddNhanVien(maNV, tenNV, ngaySinh, gioiTinh, maChucVu, maPhong, trangThai, ngayVaoLam, email, soDienThoai, diaChi, ghiChu);
         }
 
-        //---------------------------------SỬA THÔNG TIN NHÂN VIÊN-------------------------------------
+//---------------------------------SỬA THÔNG TIN NHÂN VIÊN-------------------------------------
 
         //Lấy Chức Vụ
         public DataTable GetPhongBanSuaNVQLNV()
@@ -84,6 +85,27 @@ namespace QUAN_LY_NHAN_VIEN.Controller
             return model.UpdateNV(maNV, hoTen, ngaySinh, gioiTinh,
                                   diaChi, sdt, email, ngayVaoLam,
                                   maPhong, maChucVu, trangThai);
+        }
+
+//---------------------------------------DANH SÁCH NHÂN VIÊN-----------------------------------
+        
+        //Lấy danh sách nhân viên
+        public SqlDataReader DanhSachNhanVien()
+        {
+            return model.gridviewDanhSachNhanVien();
+        }
+
+        //Lấy thông tin nhân viên tìm kiếm
+        public SqlDataReader GetResultSearchNV(string maNV, string hoTen)
+        {
+            // Gọi Model để lấy thông tin nhân viên theo MaNV hoặc HoTen
+            return model.GetNVSearch(maNV, hoTen);
+        }
+
+        //Xóa nhân viên
+        public bool deleteNV(string maNV, string hoTen)
+        {
+            return model.DeleteNV(maNV, hoTen);
         }
     }
 }

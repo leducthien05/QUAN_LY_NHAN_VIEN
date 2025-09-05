@@ -252,6 +252,69 @@ namespace QUAN_LY_NHAN_VIEN.Model
             }
         }
 
+//---------------------------------DANH SÁCH NHÂN VIÊN----------------------------------------
 
+        //Lấy thông tin trả ra dataGridView
+        public SqlDataReader gridviewDanhSachNhanVien()
+        {
+            string sql = @"SELECT NhanVien.MaNV, NhanVien.HoTen, NhanVien.NgaySinh, NhanVien.GioiTinh, NhanVien.DiaChi, NhanVien.SoDienThoai, NhanVien.Email, NhanVien.NgayVaoLam, PhongBan.TenPhong, ChucVu.TenChucVu, NhanVien.TrangThai, HopDong.NgayKetThuc
+                           FROM NhanVien 
+                            JOIN ChucVu ON NhanVien.MaChucVu = ChucVu.MaChucVu
+                            JOIN PhongBan ON NhanVien.MaPhong = PhongBan.MaPhong
+                            LEFT JOIN HopDong ON NhanVien.MaNV = HopDong.MaNV";
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            conn.Open();
+            return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+        }
+
+        //Tìm kiếm nhân viên
+        public SqlDataReader GetNVSearch(string maNV, string hoTen)
+        {
+            conn.Open();
+
+            // Câu lệnh SQL: lấy tất cả thông tin của nhân viên có mã MaNV = @MaNV
+            // Lưu ý: phải có khoảng trắng trước "WHERE" để câu lệnh hợp lệ
+            string sql = @"SELECT NhanVien.MaNV, NhanVien.HoTen, NhanVien.NgaySinh, NhanVien.GioiTinh, NhanVien.DiaChi, NhanVien.SoDienThoai, NhanVien.Email, NhanVien.NgayVaoLam, PhongBan.TenPhong, ChucVu.TenChucVu, NhanVien.TrangThai, HopDong.NgayKetThuc
+                           FROM NhanVien
+                            JOIN ChucVu ON NhanVien.MaChucVu = ChucVu.MaChucVu
+                            JOIN PhongBan ON NhanVien.MaPhong = PhongBan.MaPhong
+                            LEFT JOIN HopDong ON NhanVien.MaNV = HopDong.MaNV
+                            WHERE NhanVien.MaNV = @MaNV OR NhanVien.HoTen = @HoTen";
+
+
+            // Tạo SqlCommand với câu lệnh SQL và kết nối
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@MaNV", maNV);
+            cmd.Parameters.AddWithValue("@HoTen", hoTen);
+            return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+        }
+
+        //Xóa nhân viên
+        public bool DeleteNV(string maNV, string hoTen)
+        {
+            try
+            {
+                conn.Open();
+                string sql = "DELETE FROM NhanVien WHERE MaNV = @MaNV OR (HoTen = @HoTen AND MaNV = @MaNV)";
+
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@MaNV", maNV);
+                cmd.Parameters.AddWithValue("@HoTen", hoTen);
+
+                int rows = cmd.ExecuteNonQuery();
+                return rows > 0; // trả về true nếu xóa thành công
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa nhân viên: " + ex.Message);
+                return false;
+            }
+            finally
+            {
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+            }
+        }
     }
 }
+
