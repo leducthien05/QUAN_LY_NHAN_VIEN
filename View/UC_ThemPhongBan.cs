@@ -17,6 +17,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             InitializeComponent();
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
