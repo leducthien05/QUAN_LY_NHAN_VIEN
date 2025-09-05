@@ -36,7 +36,9 @@
     <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
@@ -54,6 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connect.cs" />
+    <Compile Include="Controller\QLNV.controller.cs" />
+    <Compile Include="Controller\TrangChu.controller.cs" />
+    <Compile Include="Model\QLNV.model.cs" />
+    <Compile Include="Model\TrangChu.model.cs" />
     <Compile Include="View\FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QUAN_LY_NHAN_VIENDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_BangLuongNV.cs" />
+    <Compile Include="View\UC_BangLuongNV.Designer.cs">
+      <DependentUpon>UC_BangLuongNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_DSHD.cs" />
+    <Compile Include="View\UC_DSHD.Designer.cs">
+      <DependentUpon>UC_DSHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_DSNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +105,14 @@
     <Compile Include="View\UC_PhongBan.Designer.cs">
       <DependentUpon>UC_PhongBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_SuaNV.cs" />
+    <Compile Include="View\UC_SuaNV.Designer.cs">
+      <DependentUpon>UC_SuaNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ThemMoiHD.cs" />
+    <Compile Include="View\UC_ThemMoiHD.Designer.cs">
+      <DependentUpon>UC_ThemMoiHD.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UC_ThemNV.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +124,18 @@
     </Compile>
     <Compile Include="View\UC_ThemPhongBan.Designer.cs">
       <DependentUpon>UC_ThemPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_TinhLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_TinhLuong.Designer.cs">
+      <DependentUpon>UC_TinhLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_TKNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_TKNV.Designer.cs">
+      <DependentUpon>UC_TKNV.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UC_TQNS.cs">
       <SubType>UserControl</SubType>
@@ -124,6 +158,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\UC_BangLuongNV.resx">
+      <DependentUpon>UC_BangLuongNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_DSHD.resx">
+      <DependentUpon>UC_DSHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_DSNV.resx">
       <DependentUpon>UC_DSNV.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,11 +173,23 @@
     <EmbeddedResource Include="View\UC_PhongBan.resx">
       <DependentUpon>UC_PhongBan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_SuaNV.resx">
+      <DependentUpon>UC_SuaNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_ThemMoiHD.resx">
+      <DependentUpon>UC_ThemMoiHD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ThemNV.resx">
       <DependentUpon>UC_ThemNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ThemPhongBan.resx">
       <DependentUpon>UC_ThemPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_TinhLuong.resx">
+      <DependentUpon>UC_TinhLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_TKNV.resx">
+      <DependentUpon>UC_TKNV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_TQNS.resx">
       <DependentUpon>UC_TQNS.cs</DependentUpon>
@@ -167,5 +219,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
