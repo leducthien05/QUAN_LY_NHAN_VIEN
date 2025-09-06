@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using QUAN_LY_NHAN_VIEN.Controller;
 using System.Data.SqlClient;
 
-
 namespace QUAN_LY_NHAN_VIEN.View
 {
     public partial class UC_DSNV: UserControl
@@ -24,21 +23,32 @@ namespace QUAN_LY_NHAN_VIEN.View
         {
             InitializeComponent();
             controller = new QLNVcontroller();
-            this.Load += UC_DSNV_Load;
+            this.Load += UC_SuaNV_Load;
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void UC_SuaNV_Load(object sender, EventArgs e)
         {
+            // Load Chức Vụ
+            DataTable dtChucVu = controller.GetChucVuQLNV();
+            comBoxChuVuNV.DataSource = dtChucVu;
+            comBoxChuVuNV.DisplayMember = "TenChucVu";  // hiện tên
+            comBoxChuVuNV.ValueMember = "MaChucVu";     // lưu mã
 
-        }
+            // Load Phòng Ban
+            DataTable dtPhongBan = controller.GetPhongBanQLNV();
+            comBoxPhongBanNV.DataSource = dtPhongBan;
+            comBoxPhongBanNV.DisplayMember = "TenPhong";
+            comBoxPhongBanNV.ValueMember = "MaPhong";
 
-        //Danh sách nhân viên
-        private void UC_DSNV_Load(object sender, EventArgs e)
-        {
+            // Load Trạng thái
+            comBoxTrangThaiNV.DataSource = controller.GetTrangThai();
             try
             {
+
                 SqlDataReader reader = controller.DanhSachNhanVien();
                 int i = 0;
+
+                
 
                 // Xóa dữ liệu cũ
                 dataGridViewDSNV.Rows.Clear();
@@ -68,7 +78,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 {
                     MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
                 }
-                
+
 
                 reader.Close(); // Đóng reader => tự động đóng connection vì có CommandBehavior.CloseConnection
             }
@@ -76,11 +86,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
             }
-
         }
 
-        //Tìm kiếm nhân viên
-        private void LoadInfoSearchNV(string maNV, string hoTen)
+        private void LoadInfoNV(string maNV, string hoTen)
         {
             SqlDataReader reader = controller.GetResultSearchNV(maNV, hoTen);
             bool found = false; // ← biến kiểm tra
@@ -124,7 +132,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
             }
@@ -136,20 +144,15 @@ namespace QUAN_LY_NHAN_VIEN.View
             }
         }
 
-        private void textBoxMaNVDSNV_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         //Button tìm kiếm nhân viên
-        private void buttonTimKiemDSNV_Click(object sender, EventArgs e)
+        private void buttonTimNV_Click_1(object sender, EventArgs e)
         {
-            maNV = textBoxMaNVDSNV.Text;
-            hoTen = textBoxNameNVDSNV.Text;
+            maNV = textBoxMaNV.Text;
+            hoTen = textBoxNameNV.Text;
 
             if (!string.IsNullOrEmpty(maNV) || !string.IsNullOrEmpty(hoTen))
             {
-                LoadInfoSearchNV(maNV, hoTen);
+                LoadInfoNV(maNV, hoTen);
             }
             else
             {
@@ -157,8 +160,59 @@ namespace QUAN_LY_NHAN_VIEN.View
             }
         }
 
+        //Button sửa nhân viên
+        private void buttonSuaNhanVien_Click(object sender, EventArgs e)
+        {
+            //Lấy thông tin từ Form
+            string maNV = textBoxMaNV.Text;
+            string hoTen = textBoxNameNV.Text;
+            DateTime ngaySinh = dateNgaySinh.Value;
+            string gioiTinh = radioNamNV.Checked ? "Nam" : "Nữ";
+            string soDienThoai = textBoxSDT.Text;
+            string email = textBoxEmail.Text;
+            string phongBan = comBoxPhongBanNV.SelectedValue.ToString();
+            string chucVu = comBoxChuVuNV.SelectedValue.ToString();
+            string trangThai = comBoxTrangThaiNV.SelectedValue.ToString();
+            string diaChi = textBoxDiaChiNV.Text;
+            DateTime ngayVaoLam = dateNgayVaoLamNV.Value;
+
+            bool result = controller.UpdateNV(maNV,hoTen, ngaySinh, gioiTinh, diaChi, soDienThoai, email, ngayVaoLam, phongBan, chucVu, trangThai);
+
+
+            if (result)
+                MessageBox.Show("Sửa thông tin nhân viên thành công!");
+            else
+                MessageBox.Show("Sửa thông tin nhân viên thất bại!");
+        }
+
         //Button Load danh sách nhân viên
-        private void buttonLoadDSNV_Click(object sender, EventArgs e)
+        
+
+        private void buttonThemNV_Click(object sender, EventArgs e)
+        {
+            string maNV = controller.GenerateMaNV();
+            string tenNV = textBoxNameNV.Text;
+            DateTime ngaySinh = dateNgaySinh.Value;
+            string gioiTinh = radioNamNV.Checked ? "Nam" : "Nữ";
+            string maChucVu = comBoxChuVuNV.SelectedValue.ToString();
+            string maPhong = comBoxPhongBanNV.SelectedValue.ToString();
+            string trangThai = comBoxTrangThaiNV.SelectedItem.ToString();
+            string email = textBoxEmail.Text;
+            string soDienThoai = textBoxSDT.Text;
+            string diaChi = textBoxDiaChiNV.Text;
+            DateTime ngayVaoLam = dateNgayVaoLamNV.Value;
+            string ghiChu = "";
+
+
+            bool result = controller.AddNhanVien(maNV, tenNV, ngaySinh, gioiTinh, maChucVu, maPhong, trangThai, ngayVaoLam, email, soDienThoai, diaChi, ghiChu);
+
+            if (result)
+                MessageBox.Show("Thêm nhân viên thành công!");
+            else
+                MessageBox.Show("Thêm nhân viên thất bại!");
+        }
+
+        private void buttonLoad_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -203,18 +257,44 @@ namespace QUAN_LY_NHAN_VIEN.View
             }
             finally
             {
-                textBoxMaNVDSNV.Text = "";
-                textBoxNameNVDSNV.Text = "";
+                textBoxMaNV.Text = "";
+                textBoxNameNV.Text = "";
+                radioNamNV.Checked = false;
+                radioNuNV.Checked = false;
+                textBoxDiaChiNV.Text = "";
+                textBoxSDT.Text = "";
+                dateNgayVaoLamNV.Text = "";
+                comBoxPhongBanNV.Text = "";
+                comBoxChuVuNV.Text = "";
+                comBoxTrangThaiNV.Text = "";
             }
         }
 
-        //Xóa nhân viên
-        private void buttonXoaDSNV_Click(object sender, EventArgs e)
+        private void dataGridViewDSNV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBoxMaNV.Text = dataGridViewDSNV.CurrentRow.Cells[0].Value.ToString();
+            textBoxNameNV.Text = dataGridViewDSNV.CurrentRow.Cells[1].Value.ToString();
+            dateNgaySinh.Text = dataGridViewDSNV.CurrentRow.Cells[2].Value.ToString();
+            string gioiTinh = dataGridViewDSNV.CurrentRow.Cells[3].Value.ToString();
+            if (gioiTinh == "Nam")
+                radioNamNV.Checked = true;
+            else if (gioiTinh == "Nữ")
+                radioNuNV.Checked = true;
+            textBoxDiaChiNV.Text = dataGridViewDSNV.CurrentRow.Cells[4].Value.ToString();
+            textBoxSDT.Text = dataGridViewDSNV.CurrentRow.Cells[5].Value.ToString();
+            dateNgayVaoLamNV.Text = dataGridViewDSNV.CurrentRow.Cells[6].Value.ToString();
+            comBoxPhongBanNV.Text = dataGridViewDSNV.CurrentRow.Cells[7].Value.ToString();
+            comBoxChuVuNV.Text = dataGridViewDSNV.CurrentRow.Cells[8].Value.ToString();
+            comBoxTrangThaiNV.Text = dataGridViewDSNV.CurrentRow.Cells[9].Value.ToString();
+
+        }
+
+        private void buttonXoaNV_Click(object sender, EventArgs e)
         {
             try
             {
-                string maNV = textBoxMaNVDSNV.Text;
-                string hoTen = textBoxNameNVDSNV.Text;
+                string maNV = textBoxMaNV.Text;
+                string hoTen = textBoxNameNV.Text;
                 bool result = controller.deleteNV(maNV, hoTen);
 
                 if (result)
@@ -222,13 +302,10 @@ namespace QUAN_LY_NHAN_VIEN.View
                 else
                     MessageBox.Show("Xóa nhân viên thất bại!");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
-
-        
-
     }
 }

@@ -37,21 +37,6 @@ namespace QUAN_LY_NHAN_VIEN.View
             panelBody.Controls.Add(TQPB);
         }
 
-        private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            UC_DSNV DSNV = new UC_DSNV();         // Tạo UC Tổng quan nhân sự
-            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
-            DSNV.Dock = DockStyle.Fill;           // Fill hết panel
-            panelBody.Controls.Add(DSNV);
-        }
-
-        private void thêmNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            UC_ThemNV ThemNV = new UC_ThemNV();         // Tạo UC Tổng quan nhân sự
-            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
-            ThemNV.Dock = DockStyle.Fill;           // Fill hết panel
-            panelBody.Controls.Add(ThemNV);
-        }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -113,10 +98,15 @@ namespace QUAN_LY_NHAN_VIEN.View
 
         private void sửaThôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UC_SuaNV SuaNV = new UC_SuaNV();         // Tạo UC Tổng quan nhân sự
+            UC_DSNV DSNV = new UC_DSNV();         // Tạo UC Tổng quan nhân sự
             panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
-            SuaNV.Dock = DockStyle.Fill;           // Fill hết panel
-            panelBody.Controls.Add(SuaNV);
+            DSNV.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(DSNV);
+        }
+
+        private void quảnLýNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
