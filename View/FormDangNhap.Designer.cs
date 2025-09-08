@@ -55,10 +55,9 @@
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.Thoat);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1838, 752);
+            this.guna2Panel1.Size = new System.Drawing.Size(1838, 806);
             this.guna2Panel1.TabIndex = 1;
             // 
             // quenMK

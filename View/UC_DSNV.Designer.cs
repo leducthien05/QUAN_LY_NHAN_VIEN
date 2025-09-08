@@ -385,7 +385,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1779, 112);
             this.label1.TabIndex = 0;
-            this.label1.Text = "➕SỬA THÔNG TIN NHÂN VIÊN MỚI";
+            this.label1.Text = "DANH SÁCH NHÂN VIÊN";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -692,6 +692,7 @@
             // 
             // buttonExcel
             // 
+            this.buttonExcel.BorderRadius = 10;
             this.buttonExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.buttonExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.buttonExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -703,6 +704,7 @@
             this.buttonExcel.Size = new System.Drawing.Size(122, 63);
             this.buttonExcel.TabIndex = 32;
             this.buttonExcel.Text = "Excel";
+            this.buttonExcel.Click += new System.EventHandler(this.buttonExcel_Click);
             // 
             // label10
             // 
@@ -814,12 +816,12 @@
             this.buttonThemNV.Text = "Thêm";
             this.buttonThemNV.Click += new System.EventHandler(this.buttonThemNV_Click);
             // 
-            // UC_SuaNV
+            // UC_DSNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "UC_SuaNV";
+            this.Name = "UC_DSNV";
             this.Size = new System.Drawing.Size(1784, 728);
             this.Load += new System.EventHandler(this.UC_SuaNV_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QUAN_LY_NHAN_VIEN.Controller;
 using System.Data.SqlClient;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
 
 namespace QUAN_LY_NHAN_VIEN.View
 {
@@ -42,6 +44,8 @@ namespace QUAN_LY_NHAN_VIEN.View
 
             // Load Trạng thái
             comBoxTrangThaiNV.DataSource = controller.GetTrangThai();
+
+            //Load danh sách nhân viên
             try
             {
 
@@ -185,9 +189,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 MessageBox.Show("Sửa thông tin nhân viên thất bại!");
         }
 
-        //Button Load danh sách nhân viên
-        
-
+        //Button thêm nhân viên
         private void buttonThemNV_Click(object sender, EventArgs e)
         {
             string maNV = controller.GenerateMaNV();
@@ -212,6 +214,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 MessageBox.Show("Thêm nhân viên thất bại!");
         }
 
+        //Button load dữ liệu 
         private void buttonLoad_Click_1(object sender, EventArgs e)
         {
             try
@@ -270,6 +273,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             }
         }
 
+        //CellClick của datagridview
         private void dataGridViewDSNV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             textBoxMaNV.Text = dataGridViewDSNV.CurrentRow.Cells[0].Value.ToString();
@@ -289,6 +293,7 @@ namespace QUAN_LY_NHAN_VIEN.View
 
         }
 
+        //Button xóa nhân viên
         private void buttonXoaNV_Click(object sender, EventArgs e)
         {
             try
@@ -306,6 +311,63 @@ namespace QUAN_LY_NHAN_VIEN.View
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        //Xuất Excel
+        private void ExportToExcel(DataGridView dgv)
+        {
+            Excel.Application excelApp = null;
+            Excel.Workbook workbook = null;
+            Excel._Worksheet worksheet = null;
+
+            try
+            {
+                excelApp = new Excel.Application();
+                workbook = excelApp.Workbooks.Add(Type.Missing);
+                worksheet = workbook.ActiveSheet;
+                worksheet.Name = "NhanVien";
+
+                // Xuất tiêu đề cột
+                for (int i = 1; i <= dgv.Columns.Count; i++)
+                {
+                    worksheet.Cells[1, i] = dgv.Columns[i - 1].HeaderText;
+                }
+
+                // Xuất dữ liệu
+                for (int i = 0; i < dgv.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dgv.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value?.ToString();
+                    }
+                }
+
+                // Hiển thị Excel
+                excelApp.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi xuất Excel: " + ex.Message);
+            }
+            finally
+            {
+                // Giải phóng COM object để tránh crash
+                if (worksheet != null) Marshal.ReleaseComObject(worksheet);
+                if (workbook != null) Marshal.ReleaseComObject(workbook);
+                if (excelApp != null) Marshal.ReleaseComObject(excelApp);
+
+                worksheet = null;
+                workbook = null;
+                excelApp = null;
+
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
+        }
+
+        private void buttonExcel_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(dataGridViewDSNV);
         }
     }
 }

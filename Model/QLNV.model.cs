@@ -279,7 +279,7 @@ namespace QUAN_LY_NHAN_VIEN.Model
                             JOIN ChucVu ON NhanVien.MaChucVu = ChucVu.MaChucVu
                             JOIN PhongBan ON NhanVien.MaPhong = PhongBan.MaPhong
                             LEFT JOIN HopDong ON NhanVien.MaNV = HopDong.MaNV
-                            WHERE NhanVien.MaNV = @MaNV OR NhanVien.HoTen = @HoTen";
+                            WHERE NhanVien.MaNV = @MaNV OR NhanVien.HoTen = @HoTen AND PhongBan.TrangThai = N'Hoạt động'";
 
 
             // Tạo SqlCommand với câu lệnh SQL và kết nối
