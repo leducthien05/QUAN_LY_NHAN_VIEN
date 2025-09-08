@@ -85,5 +85,23 @@ namespace QUAN_LY_NHAN_VIEN.View
         {
 
         }
+
+        private void thốngKêNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeNV TKNV = new UC_ThongKeNV();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            TKNV.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(TKNV);
+        }
+
+
+
+        private void thốngKêPhòngBanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_ThongKePB TKPB = new UC_ThongKePB();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            TKPB.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(TKPB);
+        }
     }
 }

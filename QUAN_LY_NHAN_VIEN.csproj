@@ -58,6 +58,11 @@
     <Compile Include="Controller\QLNV.controller.cs" />
     <Compile Include="Controller\QLPB.controller.cs" />
     <Compile Include="Controller\TrangChu.controller.cs" />
+    <Compile Include="Controller\Controller_TKPB.cs" />
+    <Compile Include="Controller\Controller_UC_TKNV.cs" />
+    <Compile Include="Model\connectQuan.cs" />
+    <Compile Include="Model\Model_UC_TKNV.cs" />
+    <Compile Include="Model\Model_TKPB.cs" />
     <Compile Include="Model\QLHD.model.cs" />
     <Compile Include="Model\QLNV.model.cs" />
     <Compile Include="Model\QLPB.model.cs" />
@@ -105,12 +110,6 @@
     <Compile Include="View\UC_DSPB.Designer.cs">
       <DependentUpon>UC_DSPB.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\UC_TKNV.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="View\UC_TKNV.Designer.cs">
-      <DependentUpon>UC_TKNV.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\UC_TQNS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -132,6 +131,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="View\UC_ThongKeNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ThongKeNV.Designer.cs">
+      <DependentUpon>UC_ThongKeNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UC_ThongKePB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UC_ThongKePB.Designer.cs">
+      <DependentUpon>UC_ThongKePB.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\UC_PhongBan.resx">
       <DependentUpon>UC_PhongBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -144,11 +155,11 @@
     <EmbeddedResource Include="View\UC_DSPB.resx">
       <DependentUpon>UC_DSPB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UC_TKNV.resx">
-      <DependentUpon>UC_TKNV.cs</DependentUpon>
+    <EmbeddedResource Include="View\UC_ThongKeNV.resx">
+      <DependentUpon>UC_ThongKeNV.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UC_TQNS.resx">
-      <DependentUpon>UC_TQNS.cs</DependentUpon>
+    <EmbeddedResource Include="View\UC_ThongKePB.resx">
+      <DependentUpon>UC_ThongKePB.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
