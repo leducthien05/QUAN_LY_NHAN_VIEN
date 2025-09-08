@@ -67,6 +67,12 @@
     <Compile Include="Model\QLNV.model.cs" />
     <Compile Include="Model\QLPB.model.cs" />
     <Compile Include="Model\TrangChu.model.cs" />
+    <Compile Include="View\CreditsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreditsForm.Designer.cs">
+      <DependentUpon>CreditsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>

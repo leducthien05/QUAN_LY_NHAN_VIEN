@@ -103,5 +103,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             TKPB.Dock = DockStyle.Fill;           // Fill hết panel
             panelBody.Controls.Add(TKPB);
         }
+
+        private void thôngTinPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (var f = new CreditsForm())
+            {
+                f.ShowDialog();
+            }
+        }
     }
 }
