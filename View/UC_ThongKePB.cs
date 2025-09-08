@@ -73,14 +73,14 @@ namespace QUAN_LY_NHAN_VIEN.View
 
             if (dt == null || dt.Rows.Count == 0)
             {
-                label5.Text = "Nam: 0 | Nữ: 0";
+                label5.Text = "Nam: 0\nNữ: 0";
                 return;
             }
 
             int totalNam = dt.Rows[0]["Nam"] != DBNull.Value ? Convert.ToInt32(dt.Rows[0]["Nam"]) : 0;
             int totalNu = dt.Rows[0]["Nu"] != DBNull.Value ? Convert.ToInt32(dt.Rows[0]["Nu"]) : 0;
 
-            label5.Text = $"Nam: {totalNam} | Nữ: {totalNu}";
+            label5.Text = $"Nam: {totalNam}\nNữ: {totalNu}";
 
             var pieSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Giới tính")
             {

@@ -65,7 +65,7 @@ namespace QUAN_LY_NHAN_VIEN.Model
             string query = @"
                 SELECT 
                     SUM(CASE WHEN GioiTinh='Nam' THEN 1 ELSE 0 END) AS Nam,
-                    SUM(CASE WHEN GioiTinh='Nữ' THEN 1 ELSE 0 END) AS Nu
+                    SUM(CASE WHEN GioiTinh=N'Nữ' THEN 1 ELSE 0 END) AS Nu
                 FROM NhanVien NV
                 INNER JOIN PhongBan PB ON NV.MaPhong = PB.MaPhong
                 WHERE PB.TenPhong = @TenPhong";
