@@ -11,6 +11,8 @@ using Guna.UI2.WinForms;
 using Guna.UI2.AnimatorNS;
 using QUAN_LY_NHAN_VIEN.Controller;
 using System.Drawing.Text;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
 
 namespace QUAN_LY_NHAN_VIEN.View
 {
@@ -111,6 +113,63 @@ namespace QUAN_LY_NHAN_VIEN.View
         private void guna2Button2_Click_1(object sender, EventArgs e)
         {
             LamMoiToanBo();
+        }
+
+        //Xuất Excel
+        private void ExportToExcel(DataGridView dgv)
+        {
+            Excel.Application excelApp = null;
+            Excel.Workbook workbook = null;
+            Excel._Worksheet worksheet = null;
+
+            try
+            {
+                excelApp = new Excel.Application();
+                workbook = excelApp.Workbooks.Add(Type.Missing);
+                worksheet = workbook.ActiveSheet;
+                worksheet.Name = "HopDong";
+
+                // Xuất tiêu đề cột
+                for (int i = 1; i <= dgv.Columns.Count; i++)
+                {
+                    worksheet.Cells[1, i] = dgv.Columns[i - 1].HeaderText;
+                }
+
+                // Xuất dữ liệu
+                for (int i = 0; i < dgv.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dgv.Columns.Count; j++)
+                    {
+                        worksheet.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value?.ToString();
+                    }
+                }
+
+                // Hiển thị Excel
+                excelApp.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi xuất Excel: " + ex.Message);
+            }
+            finally
+            {
+                // Giải phóng COM object để tránh crash
+                if (worksheet != null) Marshal.ReleaseComObject(worksheet);
+                if (workbook != null) Marshal.ReleaseComObject(workbook);
+                if (excelApp != null) Marshal.ReleaseComObject(excelApp);
+
+                worksheet = null;
+                workbook = null;
+                excelApp = null;
+
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            ExportToExcel(dataGridView1);
         }
     }
 }

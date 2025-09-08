@@ -14,7 +14,14 @@ namespace QUAN_LY_NHAN_VIEN.Model
     {
         public static DataTable GetNhanVien(string PhongBan, string ChucVu, string GioiTinh, string LoaiHD, DateTime? NgayBatDau, DateTime? NgayKetThuc, string TrangThai)
         {
-            string query = "SELECT NV.MaNV, NV.HoTen, NV.NgaySinh, NV.GioiTinh, NV.DiaChi, NV.SoDienThoai, NV.Email,NV.NgayVaoLam, NV.TrangThai,CV.TenChucVu, PB.TenPhong, HD.LoaiHD, NV.GhiChu FROM NhanVien NV INNER JOIN ChucVu CV ON NV.MaChucVu = CV.MaChucVu INNER JOIN HopDong HD ON NV.MaNV = HD.MaNV INNER JOIN PhongBan PB ON NV.MaPhong = PB.MaPhong WHERE 1 = 1";
+            string query = @"SELECT NV.MaNV, NV.HoTen, NV.NgaySinh, NV.GioiTinh, NV.DiaChi, NV.SoDienThoai, NV.Email,
+                                NV.NgayVaoLam, NV.TrangThai, CV.TenChucVu, PB.TenPhong, HD.LoaiHD, NV.GhiChu
+                            FROM NhanVien NV
+                            INNER JOIN ChucVu CV ON NV.MaChucVu = CV.MaChucVu
+                            LEFT JOIN HopDong HD ON NV.MaNV = HD.MaNV
+                            INNER JOIN PhongBan PB ON NV.MaPhong = PB.MaPhong
+                            WHERE 1=1";
+
             if (!string.IsNullOrEmpty(PhongBan))
                 query += " AND PB.TenPhong = @PhongBan";
 
@@ -24,8 +31,8 @@ namespace QUAN_LY_NHAN_VIEN.Model
             if (!string.IsNullOrEmpty(GioiTinh))
                 query += " AND NV.GioiTinh = @GioiTinh";
 
-            if (!string.IsNullOrEmpty(LoaiHD))
-                query += " AND HD.LoaiHD = @LoaiHD";
+            //if (!string.IsNullOrEmpty(LoaiHD))
+            //    query += " AND HD.LoaiHD = @LoaiHD";
 
             if (NgayBatDau.HasValue)
             {
@@ -56,7 +63,8 @@ namespace QUAN_LY_NHAN_VIEN.Model
                 parameters.Add(new SqlParameter("@NgayKetThuc", NgayKetThuc.Value));
             if (!string.IsNullOrEmpty(TrangThai))
                 parameters.Add(new SqlParameter("@TrangThai", TrangThai));
-            using (SqlConnection conn = new SqlConnection(connect.ConnectionString))
+
+            using (SqlConnection conn = Connect.GetConnection())
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
                 cmd.Parameters.AddRange(parameters.ToArray());
@@ -66,12 +74,13 @@ namespace QUAN_LY_NHAN_VIEN.Model
                 MessageBox.Show("Số nhân viên có thông tin phù hợp: " + dt.Rows.Count);
                 return dt;
             }
-
         }
+
         public static DataTable GetPhongBan()
         {
             string query = "SELECT MaPhong, TenPhong FROM PhongBan";
-            using (SqlConnection conn = new SqlConnection(connect.ConnectionString))
+
+            using (SqlConnection conn = Connect.GetConnection())
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -80,10 +89,12 @@ namespace QUAN_LY_NHAN_VIEN.Model
                 return dt;
             }
         }
+
         public static DataTable GetChucVu()
         {
             string query = "SELECT MaChucVu, TenChucVu FROM ChucVu";
-            using (SqlConnection conn = new SqlConnection(connect.ConnectionString))
+
+            using (SqlConnection conn = Connect.GetConnection())
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
@@ -92,10 +103,12 @@ namespace QUAN_LY_NHAN_VIEN.Model
                 return dt;
             }
         }
+
         public static DataTable GetLoaiHD()
         {
             string query = "SELECT DISTINCT LoaiHD FROM HopDong";
-            using (SqlConnection conn = new SqlConnection(connect.ConnectionString))
+
+            using (SqlConnection conn = Connect.GetConnection())
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
