@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Guna.UI2.WinForms;
 
 namespace QUAN_LY_NHAN_VIEN.View
 {
@@ -94,6 +95,12 @@ namespace QUAN_LY_NHAN_VIEN.View
                 // Nếu không được chọn, ẩn mật khẩu bằng ký tự '*'
                 MatKhau.PasswordChar = '*';
             }
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            guna2Panel1.Width = 1500;  // chỉnh chiều rộng panel bên trái
+            guna2Panel1.Height = this.ClientSize.Height; // cao bằng form
         }
     }
 }

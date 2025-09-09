@@ -178,16 +178,23 @@ namespace QUAN_LY_NHAN_VIEN.View
                 worksheet = workbook.ActiveSheet;
                 worksheet.Name = "NhanVien";
 
-                // Tiêu đề cột
+                // Xuất tiêu đề cột
                 for (int i = 1; i <= dgv.Columns.Count; i++)
+                {
                     worksheet.Cells[1, i] = dgv.Columns[i - 1].HeaderText;
+                }
 
-                // Dữ liệu
+                // Xuất dữ liệu
                 for (int i = 0; i < dgv.Rows.Count; i++)
                 {
                     for (int j = 0; j < dgv.Columns.Count; j++)
+                    {
                         worksheet.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value?.ToString();
+                    }
                 }
+
+                // Tự động co giãn độ rộng tất cả cột
+                worksheet.Columns.AutoFit();
 
                 excelApp.Visible = true;
             }

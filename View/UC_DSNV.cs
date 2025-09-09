@@ -151,7 +151,7 @@ namespace QUAN_LY_NHAN_VIEN.View
         //Button tìm kiếm nhân viên
         private void buttonTimNV_Click_1(object sender, EventArgs e)
         {
-            maNV = textBoxMaNV.Text;
+            maNV = texBoxMaNV.Text;
             hoTen = textBoxNameNV.Text;
 
             if (!string.IsNullOrEmpty(maNV) || !string.IsNullOrEmpty(hoTen))
@@ -168,7 +168,7 @@ namespace QUAN_LY_NHAN_VIEN.View
         private void buttonSuaNhanVien_Click(object sender, EventArgs e)
         {
             //Lấy thông tin từ Form
-            string maNV = textBoxMaNV.Text;
+            string maNV = labelMaNV.Text;
             string hoTen = textBoxNameNV.Text;
             DateTime ngaySinh = dateNgaySinh.Value;
             string gioiTinh = radioNamNV.Checked ? "Nam" : "Nữ";
@@ -181,7 +181,6 @@ namespace QUAN_LY_NHAN_VIEN.View
             DateTime ngayVaoLam = dateNgayVaoLamNV.Value;
 
             bool result = controller.UpdateNV(maNV,hoTen, ngaySinh, gioiTinh, diaChi, soDienThoai, email, ngayVaoLam, phongBan, chucVu, trangThai);
-
 
             if (result)
                 MessageBox.Show("Sửa thông tin nhân viên thành công!");
@@ -260,7 +259,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             }
             finally
             {
-                textBoxMaNV.Text = "";
+                labelMaNV.Text = "";
                 textBoxNameNV.Text = "";
                 radioNamNV.Checked = false;
                 radioNuNV.Checked = false;
@@ -270,13 +269,14 @@ namespace QUAN_LY_NHAN_VIEN.View
                 comBoxPhongBanNV.Text = "";
                 comBoxChuVuNV.Text = "";
                 comBoxTrangThaiNV.Text = "";
+                texBoxMaNV.Text = "";
             }
         }
 
         //CellClick của datagridview
         private void dataGridViewDSNV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBoxMaNV.Text = dataGridViewDSNV.CurrentRow.Cells[0].Value.ToString();
+            labelMaNV.Text = dataGridViewDSNV.CurrentRow.Cells[0].Value.ToString();
             textBoxNameNV.Text = dataGridViewDSNV.CurrentRow.Cells[1].Value.ToString();
             dateNgaySinh.Text = dataGridViewDSNV.CurrentRow.Cells[2].Value.ToString();
             string gioiTinh = dataGridViewDSNV.CurrentRow.Cells[3].Value.ToString();
@@ -298,7 +298,7 @@ namespace QUAN_LY_NHAN_VIEN.View
         {
             try
             {
-                string maNV = textBoxMaNV.Text;
+                string maNV = labelMaNV.Text;
                 string hoTen = textBoxNameNV.Text;
                 bool result = controller.deleteNV(maNV, hoTen);
 
@@ -342,6 +342,23 @@ namespace QUAN_LY_NHAN_VIEN.View
                     }
                 }
 
+                // Lấy vùng dữ liệu đã dùng
+                Excel.Range usedRange = worksheet.UsedRange;
+
+                // Thêm border cho toàn bộ bảng
+                usedRange.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
+                usedRange.Borders.Weight = Excel.XlBorderWeight.xlThin;
+
+                // Format tiêu đề (dòng 1)
+                Excel.Range headerRange = worksheet.Range[worksheet.Cells[1, 1], worksheet.Cells[1, dgv.Columns.Count]];
+                headerRange.Font.Bold = true;
+                headerRange.Interior.Color = Color.LightGray; // nền xám nhạt
+                headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+                headerRange.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
+
+                // AutoFit toàn bộ cột
+                worksheet.Columns.AutoFit();
+
                 // Hiển thị Excel
                 excelApp.Visible = true;
             }
@@ -365,9 +382,15 @@ namespace QUAN_LY_NHAN_VIEN.View
             }
         }
 
+
         private void buttonExcel_Click(object sender, EventArgs e)
         {
             ExportToExcel(dataGridViewDSNV);
+        }
+
+        private void dateNgayVaoLamNV_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

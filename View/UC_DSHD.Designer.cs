@@ -151,9 +151,10 @@
             // 
             this.dateNgayKyHD.BorderRadius = 10;
             this.dateNgayKyHD.Checked = true;
+            this.dateNgayKyHD.CustomFormat = "dd/MM/yyyy";
             this.dateNgayKyHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateNgayKyHD.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNgayKyHD.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateNgayKyHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateNgayKyHD.Location = new System.Drawing.Point(395, 157);
             this.dateNgayKyHD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateNgayKyHD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -241,10 +242,10 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 39F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel2.Controls.Add(this.buttonThemHD, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.buttonLoad, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.buttonSuaHD, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.buttonXoaHD, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonLoad, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonExcel, 8, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonSuaHD, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.buttonXoaHD, 4, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(395, 430);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
@@ -259,8 +260,9 @@
             this.buttonThemHD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.buttonThemHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.buttonThemHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonThemHD.FillColor = System.Drawing.Color.Lime;
             this.buttonThemHD.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThemHD.ForeColor = System.Drawing.Color.White;
+            this.buttonThemHD.ForeColor = System.Drawing.Color.Black;
             this.buttonThemHD.Location = new System.Drawing.Point(3, 3);
             this.buttonThemHD.Name = "buttonThemHD";
             this.buttonThemHD.Size = new System.Drawing.Size(124, 57);
@@ -276,11 +278,12 @@
             this.buttonLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.buttonLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.buttonLoad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonLoad.FillColor = System.Drawing.Color.DarkGray;
             this.buttonLoad.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLoad.ForeColor = System.Drawing.Color.White;
-            this.buttonLoad.Location = new System.Drawing.Point(174, 3);
+            this.buttonLoad.Location = new System.Drawing.Point(513, 3);
             this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(115, 57);
+            this.buttonLoad.Size = new System.Drawing.Size(121, 57);
             this.buttonLoad.TabIndex = 1;
             this.buttonLoad.Text = "Load";
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
@@ -295,9 +298,9 @@
             this.buttonSuaHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buttonSuaHD.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSuaHD.ForeColor = System.Drawing.Color.White;
-            this.buttonSuaHD.Location = new System.Drawing.Point(336, 3);
+            this.buttonSuaHD.Location = new System.Drawing.Point(174, 3);
             this.buttonSuaHD.Name = "buttonSuaHD";
-            this.buttonSuaHD.Size = new System.Drawing.Size(133, 57);
+            this.buttonSuaHD.Size = new System.Drawing.Size(115, 57);
             this.buttonSuaHD.TabIndex = 2;
             this.buttonSuaHD.Text = "Sửa";
             this.buttonSuaHD.Click += new System.EventHandler(this.buttonSuaHD_Click);
@@ -310,11 +313,12 @@
             this.buttonXoaHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.buttonXoaHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.buttonXoaHD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonXoaHD.FillColor = System.Drawing.Color.Red;
             this.buttonXoaHD.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoaHD.ForeColor = System.Drawing.Color.White;
-            this.buttonXoaHD.Location = new System.Drawing.Point(513, 3);
+            this.buttonXoaHD.Location = new System.Drawing.Point(336, 3);
             this.buttonXoaHD.Name = "buttonXoaHD";
-            this.buttonXoaHD.Size = new System.Drawing.Size(121, 57);
+            this.buttonXoaHD.Size = new System.Drawing.Size(133, 57);
             this.buttonXoaHD.TabIndex = 3;
             this.buttonXoaHD.Text = "Xóa";
             this.buttonXoaHD.Click += new System.EventHandler(this.buttonXoaHD_Click);
@@ -327,6 +331,7 @@
             this.buttonExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.buttonExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.buttonExcel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.buttonExcel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonExcel.ForeColor = System.Drawing.Color.White;
             this.buttonExcel.Location = new System.Drawing.Point(679, 3);
@@ -364,10 +369,11 @@
             // 
             this.dateTimeNgayKetThuc.BorderRadius = 10;
             this.dateTimeNgayKetThuc.Checked = true;
+            this.dateTimeNgayKetThuc.CustomFormat = "dd/MM/yyyy";
             this.dateTimeNgayKetThuc.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dateTimeNgayKetThuc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.dateTimeNgayKetThuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dateTimeNgayKetThuc.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimeNgayKetThuc.Location = new System.Drawing.Point(1205, 157);
             this.dateTimeNgayKetThuc.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dateTimeNgayKetThuc.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -439,8 +445,9 @@
             this.buttonTimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.buttonTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.buttonTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonTimKiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonTimKiem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTimKiem.ForeColor = System.Drawing.Color.White;
+            this.buttonTimKiem.ForeColor = System.Drawing.Color.Black;
             this.buttonTimKiem.Location = new System.Drawing.Point(1629, 95);
             this.buttonTimKiem.Name = "buttonTimKiem";
             this.buttonTimKiem.Size = new System.Drawing.Size(140, 56);

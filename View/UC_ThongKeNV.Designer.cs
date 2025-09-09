@@ -30,7 +30,6 @@ namespace QUAN_LY_NHAN_VIEN.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.Dock = DockStyle.Fill;
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -109,15 +108,16 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1589, 585);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1822, 771);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -129,7 +129,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1583, 100);
+            this.label1.Size = new System.Drawing.Size(1816, 125);
             this.label1.TabIndex = 0;
             this.label1.Text = "Thống Kê Nhân Viên";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,9 +139,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(82, 100);
+            this.label2.Location = new System.Drawing.Point(94, 125);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 60);
+            this.label2.Size = new System.Drawing.Size(267, 75);
             this.label2.TabIndex = 1;
             this.label2.Text = "Phòng ban:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -151,9 +151,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(82, 160);
+            this.label3.Location = new System.Drawing.Point(94, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(232, 60);
+            this.label3.Size = new System.Drawing.Size(267, 75);
             this.label3.TabIndex = 4;
             this.label3.Text = "Chức vụ:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -163,9 +163,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(796, 100);
+            this.label4.Location = new System.Drawing.Point(913, 125);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(232, 60);
+            this.label4.Size = new System.Drawing.Size(267, 75);
             this.label4.TabIndex = 5;
             this.label4.Text = "Thời gian kí hợp đồng:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -175,9 +175,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(796, 160);
+            this.label5.Location = new System.Drawing.Point(913, 200);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(232, 60);
+            this.label5.Size = new System.Drawing.Size(267, 75);
             this.label5.TabIndex = 6;
             this.label5.Text = "Loại hợp đồng:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -187,9 +187,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label6.AutoSize = true;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(82, 220);
+            this.label6.Location = new System.Drawing.Point(94, 275);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(232, 60);
+            this.label6.Size = new System.Drawing.Size(267, 75);
             this.label6.TabIndex = 7;
             this.label6.Text = "Giới tính:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -204,12 +204,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.dateTimePicker2, 1, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(1034, 103);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(1186, 129);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(470, 54);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(540, 67);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // label7
@@ -218,7 +219,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Location = new System.Drawing.Point(3, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(111, 26);
+            this.label7.Size = new System.Drawing.Size(129, 33);
             this.label7.TabIndex = 0;
             this.label7.Text = "Từ ngày:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -227,9 +228,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(3, 26);
+            this.label8.Location = new System.Drawing.Point(3, 33);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(111, 28);
+            this.label8.Size = new System.Drawing.Size(129, 34);
             this.label8.TabIndex = 1;
             this.label8.Text = "Đến ngày:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -237,19 +238,21 @@ namespace QUAN_LY_NHAN_VIEN.View
             // dateTimePicker1
             // 
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker1.Location = new System.Drawing.Point(120, 3);
+            this.dateTimePicker1.Location = new System.Drawing.Point(138, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.ShowCheckBox = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(347, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(399, 26);
             this.dateTimePicker1.TabIndex = 2;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateTimePicker2.Location = new System.Drawing.Point(120, 29);
+            this.dateTimePicker2.Location = new System.Drawing.Point(138, 37);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.ShowCheckBox = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(347, 22);
+            this.dateTimePicker2.Size = new System.Drawing.Size(399, 26);
             this.dateTimePicker2.TabIndex = 3;
             // 
             // tableLayoutPanel3
@@ -260,20 +263,22 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel3.Controls.Add(this.radioButton1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.radioButton2, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(320, 223);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(367, 279);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(470, 54);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(540, 67);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
+            this.radioButton1.Location = new System.Drawing.Point(3, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(229, 48);
+            this.radioButton1.Size = new System.Drawing.Size(264, 59);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Nam";
@@ -284,9 +289,10 @@ namespace QUAN_LY_NHAN_VIEN.View
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton2.Location = new System.Drawing.Point(238, 3);
+            this.radioButton2.Location = new System.Drawing.Point(273, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(229, 48);
+            this.radioButton2.Size = new System.Drawing.Size(264, 59);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Nữ";
@@ -298,9 +304,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(796, 220);
+            this.label9.Location = new System.Drawing.Point(913, 275);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(232, 60);
+            this.label9.Size = new System.Drawing.Size(267, 75);
             this.label9.TabIndex = 11;
             this.label9.Text = "Trạng thái:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -313,20 +319,22 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel4.Controls.Add(this.radioButton3, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.radioButton4, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1034, 223);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1186, 279);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(470, 54);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(540, 67);
             this.tableLayoutPanel4.TabIndex = 12;
             // 
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton3.Location = new System.Drawing.Point(3, 3);
+            this.radioButton3.Location = new System.Drawing.Point(3, 4);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(229, 48);
+            this.radioButton3.Size = new System.Drawing.Size(264, 59);
             this.radioButton3.TabIndex = 0;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Đang làm việc";
@@ -337,9 +345,10 @@ namespace QUAN_LY_NHAN_VIEN.View
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton4.Location = new System.Drawing.Point(238, 3);
+            this.radioButton4.Location = new System.Drawing.Point(273, 4);
+            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(229, 48);
+            this.radioButton4.Size = new System.Drawing.Size(264, 59);
             this.radioButton4.TabIndex = 1;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Đã nghỉ việc";
@@ -357,9 +366,10 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(320, 112);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(367, 144);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(470, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(540, 36);
             this.guna2ComboBox1.TabIndex = 13;
             // 
             // guna2ComboBox2
@@ -373,9 +383,10 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(320, 172);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(367, 219);
+            this.guna2ComboBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(470, 36);
+            this.guna2ComboBox2.Size = new System.Drawing.Size(540, 36);
             this.guna2ComboBox2.TabIndex = 14;
             // 
             // guna2ComboBox3
@@ -389,9 +400,10 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(1034, 172);
+            this.guna2ComboBox3.Location = new System.Drawing.Point(1186, 219);
+            this.guna2ComboBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.Size = new System.Drawing.Size(470, 36);
+            this.guna2ComboBox3.Size = new System.Drawing.Size(540, 36);
             this.guna2ComboBox3.TabIndex = 15;
             // 
             // tableLayoutPanel5
@@ -404,11 +416,12 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel5.Controls.Add(this.guna2Button2, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.guna2Button3, 2, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(320, 283);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(367, 354);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(470, 54);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(540, 67);
             this.tableLayoutPanel5.TabIndex = 16;
             // 
             // guna2Button1
@@ -419,11 +432,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button1.FillColor = System.Drawing.Color.Lime;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(3, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(150, 48);
+            this.guna2Button1.Size = new System.Drawing.Size(174, 59);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Tìm";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -436,11 +451,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button2.FillColor = System.Drawing.Color.Gray;
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(159, 3);
+            this.guna2Button2.Location = new System.Drawing.Point(183, 4);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(150, 48);
+            this.guna2Button2.Size = new System.Drawing.Size(174, 59);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Làm mới";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click_1);
@@ -453,11 +470,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(315, 3);
+            this.guna2Button3.Location = new System.Drawing.Point(363, 4);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(152, 48);
+            this.guna2Button3.Size = new System.Drawing.Size(174, 59);
             this.guna2Button3.TabIndex = 2;
             this.guna2Button3.Text = "Excel";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -467,9 +486,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(796, 280);
+            this.label10.Location = new System.Drawing.Point(913, 350);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(232, 60);
+            this.label10.Size = new System.Drawing.Size(267, 75);
             this.label10.TabIndex = 17;
             this.label10.Text = "Số nhân sự phù hợp:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -479,9 +498,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1034, 280);
+            this.label11.Location = new System.Drawing.Point(1186, 350);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(470, 60);
+            this.label11.Size = new System.Drawing.Size(540, 75);
             this.label11.TabIndex = 18;
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -506,12 +525,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.GhiChu});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 6);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 343);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 429);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1583, 239);
+            this.dataGridView1.Size = new System.Drawing.Size(1816, 338);
             this.dataGridView1.TabIndex = 19;
             // 
             // MaNV
@@ -522,7 +542,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.MaNV.MinimumWidth = 6;
             this.MaNV.Name = "MaNV";
             this.MaNV.ReadOnly = true;
-            this.MaNV.Width = 55;
+            this.MaNV.Width = 93;
             // 
             // HoTen
             // 
@@ -532,7 +552,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.HoTen.MinimumWidth = 6;
             this.HoTen.Name = "HoTen";
             this.HoTen.ReadOnly = true;
-            this.HoTen.Width = 62;
+            this.HoTen.Width = 97;
             // 
             // NgaySinh
             // 
@@ -542,7 +562,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.NgaySinh.MinimumWidth = 6;
             this.NgaySinh.Name = "NgaySinh";
             this.NgaySinh.ReadOnly = true;
-            this.NgaySinh.Width = 89;
+            this.NgaySinh.Width = 114;
             // 
             // GioiTinh
             // 
@@ -552,7 +572,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.GioiTinh.MinimumWidth = 6;
             this.GioiTinh.Name = "GioiTinh";
             this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Width = 65;
+            this.GioiTinh.Width = 103;
             // 
             // DiaChi
             // 
@@ -562,7 +582,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
             this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 56;
+            this.DiaChi.Width = 93;
             // 
             // SoDienThoai
             // 
@@ -572,7 +592,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.SoDienThoai.MinimumWidth = 6;
             this.SoDienThoai.Name = "SoDienThoai";
             this.SoDienThoai.ReadOnly = true;
-            this.SoDienThoai.Width = 59;
+            this.SoDienThoai.Width = 77;
             // 
             // Email
             // 
@@ -582,7 +602,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
             this.Email.ReadOnly = true;
-            this.Email.Width = 70;
+            this.Email.Width = 84;
             // 
             // NgayVaoLam
             // 
@@ -592,7 +612,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.NgayVaoLam.MinimumWidth = 6;
             this.NgayVaoLam.Name = "NgayVaoLam";
             this.NgayVaoLam.ReadOnly = true;
-            this.NgayVaoLam.Width = 83;
+            this.NgayVaoLam.Width = 149;
             // 
             // TenPhong
             // 
@@ -602,7 +622,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.TenPhong.MinimumWidth = 6;
             this.TenPhong.Name = "TenPhong";
             this.TenPhong.ReadOnly = true;
-            this.TenPhong.Width = 93;
+            this.TenPhong.Width = 122;
             // 
             // TenChucVu
             // 
@@ -612,7 +632,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.TenChucVu.MinimumWidth = 6;
             this.TenChucVu.Name = "TenChucVu";
             this.TenChucVu.ReadOnly = true;
-            this.TenChucVu.Width = 65;
+            this.TenChucVu.Width = 102;
             // 
             // TrangThai
             // 
@@ -622,7 +642,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.TrangThai.MinimumWidth = 6;
             this.TrangThai.Name = "TrangThai";
             this.TrangThai.ReadOnly = true;
-            this.TrangThai.Width = 84;
+            this.TrangThai.Width = 120;
             // 
             // LoaiHD
             // 
@@ -632,7 +652,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.LoaiHD.MinimumWidth = 6;
             this.LoaiHD.Name = "LoaiHD";
             this.LoaiHD.ReadOnly = true;
-            this.LoaiHD.Width = 84;
+            this.LoaiHD.Width = 146;
             // 
             // GhiChu
             // 
@@ -642,15 +662,15 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.GhiChu.MinimumWidth = 6;
             this.GhiChu.Name = "GhiChu";
             this.GhiChu.ReadOnly = true;
-            this.GhiChu.Width = 68;
             // 
             // UC_ThongKeNV
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "UC_ThongKeNV";
-            this.Size = new System.Drawing.Size(1589, 585);
+            this.Size = new System.Drawing.Size(1822, 771);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);

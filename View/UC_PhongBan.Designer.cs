@@ -30,7 +30,6 @@ namespace QUAN_LY_NHAN_VIEN.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.Dock = DockStyle.Fill;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,7 +42,15 @@ namespace QUAN_LY_NHAN_VIEN.View
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.datagirdViewPhongMar = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datagridViewPhongTC = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -77,14 +84,6 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HovaTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChucVuPhongNS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagirdViewPhongMar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datagridViewPhongTC)).BeginInit();
@@ -122,12 +121,12 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 188F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 94F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 235F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1784, 728);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1860, 771);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // datagirdViewPhongMar
@@ -159,13 +158,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.datagirdViewPhongMar.DefaultCellStyle = dataGridViewCellStyle3;
             this.datagirdViewPhongMar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagirdViewPhongMar.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.datagirdViewPhongMar.Location = new System.Drawing.Point(1191, 315);
+            this.datagirdViewPhongMar.Location = new System.Drawing.Point(1242, 393);
             this.datagirdViewPhongMar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagirdViewPhongMar.Name = "datagirdViewPhongMar";
             this.datagirdViewPhongMar.RowHeadersVisible = false;
             this.datagirdViewPhongMar.RowHeadersWidth = 62;
             this.datagirdViewPhongMar.RowTemplate.Height = 28;
-            this.datagirdViewPhongMar.Size = new System.Drawing.Size(590, 411);
+            this.datagirdViewPhongMar.Size = new System.Drawing.Size(615, 376);
             this.datagirdViewPhongMar.TabIndex = 11;
             this.datagirdViewPhongMar.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.datagirdViewPhongMar.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -188,6 +187,42 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.datagirdViewPhongMar.ThemeStyle.RowsStyle.Height = 28;
             this.datagirdViewPhongMar.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagirdViewPhongMar.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn5.HeaderText = "STT";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 112;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn6.HeaderText = "MaNV";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 141;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Họ và Tên";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 198;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn8.HeaderText = "Chức vụ";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 168;
             // 
             // datagridViewPhongTC
             // 
@@ -218,13 +253,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.datagridViewPhongTC.DefaultCellStyle = dataGridViewCellStyle6;
             this.datagridViewPhongTC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagridViewPhongTC.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.datagridViewPhongTC.Location = new System.Drawing.Point(597, 315);
+            this.datagridViewPhongTC.Location = new System.Drawing.Point(622, 393);
             this.datagridViewPhongTC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagridViewPhongTC.Name = "datagridViewPhongTC";
             this.datagridViewPhongTC.RowHeadersVisible = false;
             this.datagridViewPhongTC.RowHeadersWidth = 62;
             this.datagridViewPhongTC.RowTemplate.Height = 28;
-            this.datagridViewPhongTC.Size = new System.Drawing.Size(588, 411);
+            this.datagridViewPhongTC.Size = new System.Drawing.Size(614, 376);
             this.datagridViewPhongTC.TabIndex = 10;
             this.datagridViewPhongTC.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.datagridViewPhongTC.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -248,15 +283,51 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.datagridViewPhongTC.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.datagridViewPhongTC.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 112;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn2.HeaderText = "MaNV";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 141;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Họ và Tên";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 198;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Chức vụ";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 168;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.SandyBrown;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(597, 75);
+            this.label8.Location = new System.Drawing.Point(622, 94);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(588, 50);
+            this.label8.Size = new System.Drawing.Size(614, 62);
             this.label8.TabIndex = 7;
             this.label8.Text = "Phòng tài chính";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -271,7 +342,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1778, 75);
+            this.label1.Size = new System.Drawing.Size(1854, 94);
             this.label1.TabIndex = 0;
             this.label1.Text = "Tổng Quan Phòng Ban";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -287,7 +358,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel3.Controls.Add(this.guna2CirclePictureBox2, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 1, 3);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(597, 127);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(622, 158);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
@@ -296,7 +367,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(588, 184);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(614, 231);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // label9
@@ -304,9 +375,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(179, 0);
+            this.label9.Location = new System.Drawing.Point(187, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(406, 46);
+            this.label9.Size = new System.Drawing.Size(424, 57);
             this.label9.TabIndex = 1;
             this.label9.Text = "Quản lý ngân sách - dòng tiền";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -316,9 +387,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(179, 46);
+            this.label10.Location = new System.Drawing.Point(187, 57);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(406, 46);
+            this.label10.Size = new System.Drawing.Size(424, 57);
             this.label10.TabIndex = 2;
             this.label10.Text = "Báo cáo - phân tích tài chính";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -328,9 +399,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(179, 92);
+            this.label11.Location = new System.Drawing.Point(187, 114);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(406, 46);
+            this.label11.Size = new System.Drawing.Size(424, 57);
             this.label11.TabIndex = 3;
             this.label11.Text = "Kiểm soát - tuân thủ";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -345,7 +416,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.tableLayoutPanel3.SetRowSpan(this.guna2CirclePictureBox2, 4);
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(170, 180);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(178, 227);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox2.TabIndex = 7;
             this.guna2CirclePictureBox2.TabStop = false;
@@ -358,12 +429,12 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel6.Controls.Add(this.label15, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.txtLienHePTC, 1, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(179, 142);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(187, 176);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(406, 38);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(424, 50);
             this.tableLayoutPanel6.TabIndex = 8;
             // 
             // label15
@@ -373,7 +444,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(3, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(115, 38);
+            this.label15.Size = new System.Drawing.Size(121, 50);
             this.label15.TabIndex = 0;
             this.label15.Text = "Liên hệ:";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -383,9 +454,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.txtLienHePTC.AutoSize = true;
             this.txtLienHePTC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLienHePTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLienHePTC.Location = new System.Drawing.Point(124, 0);
+            this.txtLienHePTC.Location = new System.Drawing.Point(130, 0);
             this.txtLienHePTC.Name = "txtLienHePTC";
-            this.txtLienHePTC.Size = new System.Drawing.Size(279, 38);
+            this.txtLienHePTC.Size = new System.Drawing.Size(291, 50);
             this.txtLienHePTC.TabIndex = 1;
             this.txtLienHePTC.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -401,16 +472,16 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 1, 3);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 127);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 158);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 58.03571F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 41.96429F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(588, 184);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(613, 231);
             this.tableLayoutPanel2.TabIndex = 3;
             // 
             // label2
@@ -418,9 +489,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(179, 0);
+            this.label2.Location = new System.Drawing.Point(186, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(406, 56);
+            this.label2.Size = new System.Drawing.Size(424, 71);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tuyển dụng - tiếp nhận nhân sự";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -430,9 +501,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(179, 56);
+            this.label3.Location = new System.Drawing.Point(186, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(406, 40);
+            this.label3.Size = new System.Drawing.Size(424, 51);
             this.label3.TabIndex = 2;
             this.label3.Text = "Đào tạo - phát triển";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -442,9 +513,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(179, 96);
+            this.label4.Location = new System.Drawing.Point(186, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(406, 42);
+            this.label4.Size = new System.Drawing.Size(424, 52);
             this.label4.TabIndex = 3;
             this.label4.Text = "Chính sách lao động - phúc lợi";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -459,7 +530,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.tableLayoutPanel2.SetRowSpan(this.guna2CirclePictureBox1, 4);
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(170, 180);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(177, 227);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 9;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -472,12 +543,12 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel5.Controls.Add(this.label5, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txtLienHePNS, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(179, 140);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(186, 176);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(406, 42);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(424, 53);
             this.tableLayoutPanel5.TabIndex = 10;
             // 
             // label5
@@ -487,7 +558,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 42);
+            this.label5.Size = new System.Drawing.Size(121, 53);
             this.label5.TabIndex = 0;
             this.label5.Text = "Liên hệ:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -497,9 +568,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.txtLienHePNS.AutoSize = true;
             this.txtLienHePNS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLienHePNS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLienHePNS.Location = new System.Drawing.Point(124, 0);
+            this.txtLienHePNS.Location = new System.Drawing.Point(130, 0);
             this.txtLienHePNS.Name = "txtLienHePNS";
-            this.txtLienHePNS.Size = new System.Drawing.Size(279, 42);
+            this.txtLienHePNS.Size = new System.Drawing.Size(291, 53);
             this.txtLienHePNS.TabIndex = 1;
             this.txtLienHePNS.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -509,9 +580,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label6.BackColor = System.Drawing.Color.Cyan;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(3, 75);
+            this.label6.Location = new System.Drawing.Point(3, 94);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(588, 50);
+            this.label6.Size = new System.Drawing.Size(613, 62);
             this.label6.TabIndex = 4;
             this.label6.Text = "Phòng nhân sự";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -522,9 +593,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label7.BackColor = System.Drawing.Color.Gold;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1191, 75);
+            this.label7.Location = new System.Drawing.Point(1242, 94);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(590, 50);
+            this.label7.Size = new System.Drawing.Size(615, 62);
             this.label7.TabIndex = 6;
             this.label7.Text = "Phòng Marketing";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -540,7 +611,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel4.Controls.Add(this.label13, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel7, 1, 3);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(1191, 127);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(1242, 158);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 4;
@@ -549,7 +620,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(590, 184);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(615, 231);
             this.tableLayoutPanel4.TabIndex = 8;
             // 
             // guna2CirclePictureBox3
@@ -562,7 +633,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.guna2CirclePictureBox3.Name = "guna2CirclePictureBox3";
             this.tableLayoutPanel4.SetRowSpan(this.guna2CirclePictureBox3, 4);
             this.guna2CirclePictureBox3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(171, 180);
+            this.guna2CirclePictureBox3.Size = new System.Drawing.Size(178, 227);
             this.guna2CirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox3.TabIndex = 0;
             this.guna2CirclePictureBox3.TabStop = false;
@@ -572,9 +643,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label12.AutoSize = true;
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(180, 0);
+            this.label12.Location = new System.Drawing.Point(187, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(407, 46);
+            this.label12.Size = new System.Drawing.Size(425, 57);
             this.label12.TabIndex = 4;
             this.label12.Text = "Xây dựng - phát triển thương hiệu";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -584,9 +655,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(180, 92);
+            this.label14.Location = new System.Drawing.Point(187, 114);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(407, 46);
+            this.label14.Size = new System.Drawing.Size(425, 57);
             this.label14.TabIndex = 5;
             this.label14.Text = "phẩm/dịch vụ";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -596,9 +667,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label13.AutoSize = true;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(180, 46);
+            this.label13.Location = new System.Drawing.Point(187, 57);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(407, 46);
+            this.label13.Size = new System.Drawing.Size(425, 57);
             this.label13.TabIndex = 6;
             this.label13.Text = "Chiến lược - triển khai quảng bá sản";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -611,12 +682,12 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.tableLayoutPanel7.Controls.Add(this.label16, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.txtLienHePMK, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(180, 142);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(187, 176);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(407, 38);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(425, 50);
             this.tableLayoutPanel7.TabIndex = 7;
             // 
             // label16
@@ -626,7 +697,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(3, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(116, 38);
+            this.label16.Size = new System.Drawing.Size(121, 50);
             this.label16.TabIndex = 0;
             this.label16.Text = "Liên hệ:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -636,9 +707,9 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.txtLienHePMK.AutoSize = true;
             this.txtLienHePMK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtLienHePMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLienHePMK.Location = new System.Drawing.Point(125, 0);
+            this.txtLienHePMK.Location = new System.Drawing.Point(130, 0);
             this.txtLienHePMK.Name = "txtLienHePMK";
-            this.txtLienHePMK.Size = new System.Drawing.Size(279, 38);
+            this.txtLienHePMK.Size = new System.Drawing.Size(292, 50);
             this.txtLienHePMK.TabIndex = 1;
             this.txtLienHePMK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -671,13 +742,13 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.datagridViewPhongNS.DefaultCellStyle = dataGridViewCellStyle9;
             this.datagridViewPhongNS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.datagridViewPhongNS.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.datagridViewPhongNS.Location = new System.Drawing.Point(3, 315);
+            this.datagridViewPhongNS.Location = new System.Drawing.Point(3, 393);
             this.datagridViewPhongNS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datagridViewPhongNS.Name = "datagridViewPhongNS";
             this.datagridViewPhongNS.RowHeadersVisible = false;
             this.datagridViewPhongNS.RowHeadersWidth = 62;
             this.datagridViewPhongNS.RowTemplate.Height = 28;
-            this.datagridViewPhongNS.Size = new System.Drawing.Size(588, 411);
+            this.datagridViewPhongNS.Size = new System.Drawing.Size(613, 376);
             this.datagridViewPhongNS.TabIndex = 9;
             this.datagridViewPhongNS.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.datagridViewPhongNS.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -737,86 +808,14 @@ namespace QUAN_LY_NHAN_VIEN.View
             this.ChucVuPhongNS.ReadOnly = true;
             this.ChucVuPhongNS.Width = 168;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn1.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 112;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn2.HeaderText = "MaNV";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 141;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Họ và Tên";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 198;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn4.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 168;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn5.HeaderText = "STT";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 112;
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn6.HeaderText = "MaNV";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
-            this.dataGridViewTextBoxColumn6.Width = 141;
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Họ và Tên";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 198;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewTextBoxColumn8.HeaderText = "Chức vụ";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 168;
-            // 
             // UC_PhongBan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_PhongBan";
-            this.Size = new System.Drawing.Size(1589, 585);
+            this.Size = new System.Drawing.Size(1860, 771);
             this.Load += new System.EventHandler(this.UC_PhongBan_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

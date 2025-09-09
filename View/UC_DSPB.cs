@@ -273,7 +273,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 excelApp = new Excel.Application();
                 workbook = excelApp.Workbooks.Add(Type.Missing);
                 worksheet = workbook.ActiveSheet;
-                worksheet.Name = "NhanVien";
+                worksheet.Name = "PhongBan";
 
                 // Xuất tiêu đề cột
                 for (int i = 1; i <= dgv.Columns.Count; i++)
@@ -289,6 +289,23 @@ namespace QUAN_LY_NHAN_VIEN.View
                         worksheet.Cells[i + 2, j + 1] = dgv.Rows[i].Cells[j].Value?.ToString();
                     }
                 }
+
+                // Lấy vùng dữ liệu đã dùng
+                Excel.Range usedRange = worksheet.UsedRange;
+
+                // Thêm border cho toàn bộ bảng
+                usedRange.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
+                usedRange.Borders.Weight = Excel.XlBorderWeight.xlThin;
+
+                // Format tiêu đề (dòng 1)
+                Excel.Range headerRange = worksheet.Range[worksheet.Cells[1, 1], worksheet.Cells[1, dgv.Columns.Count]];
+                headerRange.Font.Bold = true;
+                headerRange.Interior.Color = Color.LightGray; // nền xám nhạt
+                headerRange.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter;
+                headerRange.Borders.LineStyle = Excel.XlLineStyle.xlContinuous;
+
+                // AutoFit toàn bộ cột
+                worksheet.Columns.AutoFit();
 
                 // Hiển thị Excel
                 excelApp.Visible = true;
@@ -312,6 +329,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 GC.WaitForPendingFinalizers();
             }
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {

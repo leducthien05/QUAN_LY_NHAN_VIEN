@@ -111,5 +111,13 @@ namespace QUAN_LY_NHAN_VIEN.View
                 f.ShowDialog();
             }
         }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UC_DMK DMK = new UC_DMK();         // Tạo UC Tổng quan nhân sự
+            panelBody.Controls.Clear();         // Xóa UC cũ (nếu có)
+            DMK.Dock = DockStyle.Fill;           // Fill hết panel
+            panelBody.Controls.Add(DMK);
+        }
     }
 }

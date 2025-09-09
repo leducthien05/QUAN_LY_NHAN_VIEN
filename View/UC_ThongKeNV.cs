@@ -144,6 +144,9 @@ namespace QUAN_LY_NHAN_VIEN.View
                     }
                 }
 
+                // Tự động co giãn độ rộng tất cả cột
+                worksheet.Columns.AutoFit();
+
                 // Hiển thị Excel
                 excelApp.Visible = true;
             }
