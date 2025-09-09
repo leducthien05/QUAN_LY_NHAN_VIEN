@@ -122,6 +122,7 @@
     <Compile Include="View\UC_TQNS.Designer.cs">
       <DependentUpon>UC_TQNS.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_TQNS.resx" />
     <EmbeddedResource Include="View\FormDangNhap.resx">
       <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\UC_ThongKePB.resx">
       <DependentUpon>UC_ThongKePB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UC_TQNS.resx">
+      <DependentUpon>UC_TQNS.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

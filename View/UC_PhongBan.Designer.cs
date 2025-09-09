@@ -1,4 +1,6 @@
-﻿namespace QUAN_LY_NHAN_VIEN.View
+﻿using System.Windows.Forms;
+
+namespace QUAN_LY_NHAN_VIEN.View
 {
     partial class UC_PhongBan
     {
@@ -28,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Dock = DockStyle.Fill;
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -808,12 +811,12 @@
             // 
             // UC_PhongBan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UC_PhongBan";
-            this.Size = new System.Drawing.Size(1784, 728);
+            this.Size = new System.Drawing.Size(1589, 585);
             this.Load += new System.EventHandler(this.UC_PhongBan_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

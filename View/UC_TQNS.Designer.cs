@@ -776,13 +776,13 @@
             // 
             // UC_TQNS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UC_TQNS";
-            this.Size = new System.Drawing.Size(1784, 728);
+            this.Size = new System.Drawing.Size(1589, 585);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridViewGioiTinh)).EndInit();
