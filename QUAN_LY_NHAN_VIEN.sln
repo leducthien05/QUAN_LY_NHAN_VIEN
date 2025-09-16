@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QUAN_LY_NHAN_VIEN", "QUAN_LY_NHAN_VIEN.csproj", "{AFEE2BA3-FC6B-4B5C-A142-B234E9131339}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupQLNV", "..\SetupQLNV\SetupQLNV.vdproj", "{B3CCB84D-CF09-CA1D-5254-E3BCB94C13D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Admin\Downloads\icon.ico = C:\Users\Admin\Downloads\icon.ico
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +22,8 @@ Global
 		{AFEE2BA3-FC6B-4B5C-A142-B234E9131339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFEE2BA3-FC6B-4B5C-A142-B234E9131339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFEE2BA3-FC6B-4B5C-A142-B234E9131339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3CCB84D-CF09-CA1D-5254-E3BCB94C13D9}.Debug|Any CPU.ActiveCfg = Debug
+		{B3CCB84D-CF09-CA1D-5254-E3BCB94C13D9}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

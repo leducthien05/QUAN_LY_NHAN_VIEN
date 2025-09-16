@@ -11,6 +11,7 @@ using QUAN_LY_NHAN_VIEN.Controller;
 using System.Data.SqlClient;
 using Excel = Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 
 namespace QUAN_LY_NHAN_VIEN.View
 {
@@ -112,7 +113,9 @@ namespace QUAN_LY_NHAN_VIEN.View
                         dataGridViewDSNV.Rows.Add();
                         dataGridViewDSNV.Rows[i].Cells[0].Value = reader["MaNV"]; // Mã NV
                         dataGridViewDSNV.Rows[i].Cells[1].Value = reader["HoTen"]; // Họ Tên
-                        dataGridViewDSNV.Rows[i].Cells[2].Value = reader["NgaySinh"];
+                        dataGridViewDSNV.Rows[i].Cells[2].Value = Convert.ToDateTime(reader["NgaySinh"]).ToString("dd/MM/yyyy");
+                        dataGridViewDSNV.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+
                         dataGridViewDSNV.Rows[i].Cells[3].Value = reader["GioiTinh"];
                         dataGridViewDSNV.Rows[i].Cells[4].Value = reader["DiaChi"]; // Mã NV
                         dataGridViewDSNV.Rows[i].Cells[5].Value = reader["SoDienThoai"]; // Họ Tên
@@ -170,7 +173,7 @@ namespace QUAN_LY_NHAN_VIEN.View
             //Lấy thông tin từ Form
             string maNV = labelMaNV.Text;
             string hoTen = textBoxNameNV.Text;
-            DateTime ngaySinh = dateNgaySinh.Value;
+            DateTime ngaySinh = dateNgaySinh.Value.Date;
             string gioiTinh = radioNamNV.Checked ? "Nam" : "Nữ";
             string soDienThoai = textBoxSDT.Text;
             string email = textBoxEmail.Text;
@@ -180,7 +183,16 @@ namespace QUAN_LY_NHAN_VIEN.View
             string diaChi = textBoxDiaChiNV.Text;
             DateTime ngayVaoLam = dateNgayVaoLamNV.Value;
 
-            bool result = controller.UpdateNV(maNV,hoTen, ngaySinh, gioiTinh, diaChi, soDienThoai, email, ngayVaoLam, phongBan, chucVu, trangThai);
+            bool result = false;
+
+            if (IsValidEmail(email))
+            {
+                result = controller.UpdateNV(maNV, hoTen, ngaySinh, gioiTinh, diaChi, soDienThoai, email, ngayVaoLam, phongBan, chucVu, trangThai);
+            }
+            else
+            {
+                MessageBox.Show("Email không đúng định dạng!");
+            }
 
             if (result)
                 MessageBox.Show("Sửa thông tin nhân viên thành công!");
@@ -188,6 +200,12 @@ namespace QUAN_LY_NHAN_VIEN.View
                 MessageBox.Show("Sửa thông tin nhân viên thất bại!");
         }
 
+
+        private bool IsValidEmail(string email)
+        {
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, pattern);
+        }
         //Button thêm nhân viên
         private void buttonThemNV_Click(object sender, EventArgs e)
         {
@@ -198,14 +216,24 @@ namespace QUAN_LY_NHAN_VIEN.View
             string maChucVu = comBoxChuVuNV.SelectedValue.ToString();
             string maPhong = comBoxPhongBanNV.SelectedValue.ToString();
             string trangThai = comBoxTrangThaiNV.SelectedItem.ToString();
+
             string email = textBoxEmail.Text;
             string soDienThoai = textBoxSDT.Text;
             string diaChi = textBoxDiaChiNV.Text;
             DateTime ngayVaoLam = dateNgayVaoLamNV.Value;
             string ghiChu = "";
 
+            bool result = false;
 
-            bool result = controller.AddNhanVien(maNV, tenNV, ngaySinh, gioiTinh, maChucVu, maPhong, trangThai, ngayVaoLam, email, soDienThoai, diaChi, ghiChu);
+            if (IsValidEmail(email))
+            {
+                result = controller.AddNhanVien(maNV, tenNV, ngaySinh, gioiTinh, maChucVu, maPhong, trangThai, ngayVaoLam, email, soDienThoai, diaChi, ghiChu);
+            }
+            else
+            {
+                MessageBox.Show("Email không đúng định dạng!");
+            }
+
 
             if (result)
                 MessageBox.Show("Thêm nhân viên thành công!");
@@ -232,7 +260,9 @@ namespace QUAN_LY_NHAN_VIEN.View
                         dataGridViewDSNV.Rows.Add();
                         dataGridViewDSNV.Rows[i].Cells[0].Value = reader["MaNV"]; // Mã NV
                         dataGridViewDSNV.Rows[i].Cells[1].Value = reader["HoTen"]; // Họ Tên
-                        dataGridViewDSNV.Rows[i].Cells[2].Value = reader["NgaySinh"];
+                        dataGridViewDSNV.Rows[i].Cells[2].Value = Convert.ToDateTime(reader["NgaySinh"]).ToString("dd/MM/yyyy");
+                        dataGridViewDSNV.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+
                         dataGridViewDSNV.Rows[i].Cells[3].Value = reader["GioiTinh"];
                         dataGridViewDSNV.Rows[i].Cells[4].Value = reader["DiaChi"]; // Mã NV
                         dataGridViewDSNV.Rows[i].Cells[5].Value = reader["SoDienThoai"]; // Họ Tên
@@ -270,6 +300,7 @@ namespace QUAN_LY_NHAN_VIEN.View
                 comBoxChuVuNV.Text = "";
                 comBoxTrangThaiNV.Text = "";
                 texBoxMaNV.Text = "";
+                textBoxEmail.Text = "";
             }
         }
 
@@ -391,6 +422,25 @@ namespace QUAN_LY_NHAN_VIEN.View
         private void dateNgayVaoLamNV_ValueChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void texBoxMaNV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSDT_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBoxSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Chỉ cho phép số và phím điều khiển (Backspace, Delete,...)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

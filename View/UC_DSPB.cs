@@ -267,7 +267,6 @@ namespace QUAN_LY_NHAN_VIEN.View
             Excel.Application excelApp = null;
             Excel.Workbook workbook = null;
             Excel._Worksheet worksheet = null;
-
             try
             {
                 excelApp = new Excel.Application();
@@ -344,6 +343,20 @@ namespace QUAN_LY_NHAN_VIEN.View
         private void buttonExcel_Click(object sender, EventArgs e)
         {
             ExportToExcel(dataGridViewDSPB);
+        }
+
+        private void textBoxLienHe_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxLienHe_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Chỉ cho phép số và phím điều khiển (Backspace, Delete,...)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 

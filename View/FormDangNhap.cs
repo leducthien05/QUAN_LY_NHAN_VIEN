@@ -43,44 +43,59 @@ namespace QUAN_LY_NHAN_VIEN.View
         {
             try
             {
-                conn.Open();
-                string TenDN = TenDangNhap.Text;
-                string Pass = MatKhau.Text;
+                string Pass;
+                string TenDN;
+                bool dangNhapThanhCong = false;
 
-                string sql = "SELECT * FROM TaiKhoan WHERE MatKhau =  @MatKhau AND TenDangNhap = @TenDangNhap";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                cmd.Parameters.AddWithValue("@MatKhau", Pass);
-                cmd.Parameters.AddWithValue("@TenDangNhap", TenDN);
+                do
+                {
+                    conn.Open();
+                    TenDN = TenDangNhap.Text.Trim();
+                    Pass = MatKhau.Text.Trim();
 
-                SqlDataReader reader = cmd.ExecuteReader();
-                if (string.IsNullOrEmpty(TenDN) || string.IsNullOrEmpty(Pass))
-                {
-                    MessageBox.Show("Vui lòng nhập đầy đủ Tên đăng nhập và Mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-                if (reader.HasRows)
-                {
-                    while (reader.Read() == true)
+                    if (string.IsNullOrEmpty(TenDN) || string.IsNullOrEmpty(Pass))
                     {
+                        MessageBox.Show("Vui lòng nhập đầy đủ Tên đăng nhập và Mật khẩu.",
+                                        "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        conn.Close();
+                        return;
+                    }
+
+                    string sql = "SELECT * FROM TaiKhoan WHERE TenDangNhap=@TenDN AND MatKhau=@Pass";
+                    SqlCommand cmd = new SqlCommand(sql, conn);
+                    cmd.Parameters.AddWithValue("@TenDN", TenDN);
+                    cmd.Parameters.AddWithValue("@Pass", Pass);
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.HasRows)
+                    {
+                        dangNhapThanhCong = true;
+
                         this.Hide();
                         FormDashboard Dashboard = new FormDashboard();
                         Dashboard.ShowDialog();
-                        Dashboard = null;
                         MatKhau.Text = "";
                         this.Show();
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng", "Thông báo");
-                }
+                    else
+                    {
+                        MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng", "Thông báo");
+                        MatKhau.Clear();
+                        MatKhau.Focus();
+                    }
 
+                    conn.Close();
+
+                } while (!dangNhapThanhCong);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
+                conn.Close();
             }
         }
+
 
         private void HienThiMK_CheckedChanged(object sender, EventArgs e)
         {

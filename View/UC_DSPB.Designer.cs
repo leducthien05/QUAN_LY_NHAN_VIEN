@@ -43,10 +43,10 @@
             this.radioActive = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonLoad = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonExcel = new Guna.UI2.WinForms.Guna2Button();
             this.buttonThem = new Guna.UI2.WinForms.Guna2Button();
             this.buttonSua = new Guna.UI2.WinForms.Guna2Button();
             this.buttonXoa = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonExcel = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxLienHe = new Guna.UI2.WinForms.Guna2TextBox();
             this.buttonTimKiem = new Guna.UI2.WinForms.Guna2Button();
@@ -322,6 +322,23 @@
             this.buttonLoad.Text = "Làm mới";
             this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click);
             // 
+            // buttonExcel
+            // 
+            this.buttonExcel.BorderRadius = 12;
+            this.buttonExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExcel.ForeColor = System.Drawing.Color.White;
+            this.buttonExcel.Location = new System.Drawing.Point(781, 3);
+            this.buttonExcel.Name = "buttonExcel";
+            this.buttonExcel.Size = new System.Drawing.Size(124, 60);
+            this.buttonExcel.TabIndex = 16;
+            this.buttonExcel.Text = "Excel";
+            this.buttonExcel.Click += new System.EventHandler(this.buttonExcel_Click);
+            // 
             // buttonThem
             // 
             this.buttonThem.BorderRadius = 12;
@@ -375,23 +392,6 @@
             this.buttonXoa.Text = "Xóa";
             this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
-            // buttonExcel
-            // 
-            this.buttonExcel.BorderRadius = 12;
-            this.buttonExcel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonExcel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonExcel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonExcel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonExcel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.buttonExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonExcel.ForeColor = System.Drawing.Color.White;
-            this.buttonExcel.Location = new System.Drawing.Point(781, 3);
-            this.buttonExcel.Name = "buttonExcel";
-            this.buttonExcel.Size = new System.Drawing.Size(124, 60);
-            this.buttonExcel.TabIndex = 16;
-            this.buttonExcel.Text = "Excel";
-            this.buttonExcel.Click += new System.EventHandler(this.buttonExcel_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -423,6 +423,8 @@
             this.textBoxLienHe.SelectedText = "";
             this.textBoxLienHe.Size = new System.Drawing.Size(488, 47);
             this.textBoxLienHe.TabIndex = 16;
+            this.textBoxLienHe.TextChanged += new System.EventHandler(this.textBoxLienHe_TextChanged);
+            this.textBoxLienHe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxLienHe_KeyPress);
             // 
             // buttonTimKiem
             // 

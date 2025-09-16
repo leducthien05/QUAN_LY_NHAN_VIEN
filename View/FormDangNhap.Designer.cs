@@ -55,9 +55,9 @@
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.Thoat);
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(2, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1806, 820);
+            this.guna2Panel1.Size = new System.Drawing.Size(1804, 820);
             this.guna2Panel1.TabIndex = 1;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -218,7 +218,7 @@
             this.Thoat.ForeColor = System.Drawing.Color.White;
             this.Thoat.Image = ((System.Drawing.Image)(resources.GetObject("Thoat.Image")));
             this.Thoat.ImageSize = new System.Drawing.Size(45, 46);
-            this.Thoat.Location = new System.Drawing.Point(0, 0);
+            this.Thoat.Location = new System.Drawing.Point(0, 3);
             this.Thoat.Name = "Thoat";
             this.Thoat.Size = new System.Drawing.Size(46, 45);
             this.Thoat.TabIndex = 0;
@@ -232,6 +232,7 @@
             this.ClientSize = new System.Drawing.Size(1838, 752);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangNhap";

@@ -65,16 +65,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.comBoxTrangThaiNV = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonSuaNhanVien = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonXoaNV = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonLoad = new Guna.UI2.WinForms.Guna2Button();
             this.buttonExcel = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonTimNV = new Guna.UI2.WinForms.Guna2Button();
             this.label10 = new System.Windows.Forms.Label();
             this.dateNgayVaoLamNV = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label15 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.buttonLoad = new Guna.UI2.WinForms.Guna2Button();
-            this.buttonTimNV = new Guna.UI2.WinForms.Guna2Button();
             this.buttonThemNV = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonSuaNhanVien = new Guna.UI2.WinForms.Guna2Button();
+            this.buttonXoaNV = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.texBoxMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelMaNV = new System.Windows.Forms.Label();
@@ -465,6 +465,8 @@
             this.textBoxSDT.SelectedText = "";
             this.textBoxSDT.Size = new System.Drawing.Size(323, 40);
             this.textBoxSDT.TabIndex = 11;
+            this.textBoxSDT.TextChanged += new System.EventHandler(this.textBoxSDT_TextChanged);
+            this.textBoxSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxSDT_KeyPress);
             // 
             // label5
             // 
@@ -640,40 +642,22 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(512, 69);
             this.tableLayoutPanel2.TabIndex = 25;
             // 
-            // buttonSuaNhanVien
+            // buttonLoad
             // 
-            this.buttonSuaNhanVien.BorderRadius = 10;
-            this.buttonSuaNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonSuaNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonSuaNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonSuaNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonSuaNhanVien.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSuaNhanVien.ForeColor = System.Drawing.Color.White;
-            this.buttonSuaNhanVien.Location = new System.Drawing.Point(177, 2);
-            this.buttonSuaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonSuaNhanVien.Name = "buttonSuaNhanVien";
-            this.buttonSuaNhanVien.Size = new System.Drawing.Size(128, 63);
-            this.buttonSuaNhanVien.TabIndex = 0;
-            this.buttonSuaNhanVien.Text = "Sửa";
-            this.buttonSuaNhanVien.Click += new System.EventHandler(this.buttonSuaNhanVien_Click);
-            // 
-            // buttonXoaNV
-            // 
-            this.buttonXoaNV.BorderRadius = 10;
-            this.buttonXoaNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonXoaNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonXoaNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonXoaNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonXoaNV.FillColor = System.Drawing.Color.Red;
-            this.buttonXoaNV.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonXoaNV.ForeColor = System.Drawing.Color.White;
-            this.buttonXoaNV.Location = new System.Drawing.Point(365, 2);
-            this.buttonXoaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonXoaNV.Name = "buttonXoaNV";
-            this.buttonXoaNV.Size = new System.Drawing.Size(133, 63);
-            this.buttonXoaNV.TabIndex = 1;
-            this.buttonXoaNV.Text = "Xóa";
-            this.buttonXoaNV.Click += new System.EventHandler(this.buttonXoaNV_Click);
+            this.buttonLoad.BorderRadius = 10;
+            this.buttonLoad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonLoad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonLoad.FillColor = System.Drawing.SystemColors.AppWorkspace;
+            this.buttonLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLoad.ForeColor = System.Drawing.Color.White;
+            this.buttonLoad.Location = new System.Drawing.Point(3, 3);
+            this.buttonLoad.Name = "buttonLoad";
+            this.buttonLoad.Size = new System.Drawing.Size(156, 61);
+            this.buttonLoad.TabIndex = 31;
+            this.buttonLoad.Text = "Làm mới";
+            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click_1);
             // 
             // buttonExcel
             // 
@@ -691,6 +675,23 @@
             this.buttonExcel.TabIndex = 32;
             this.buttonExcel.Text = "Excel";
             this.buttonExcel.Click += new System.EventHandler(this.buttonExcel_Click);
+            // 
+            // buttonTimNV
+            // 
+            this.buttonTimNV.BorderRadius = 10;
+            this.buttonTimNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonTimNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonTimNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonTimNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonTimNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.buttonTimNV.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTimNV.ForeColor = System.Drawing.Color.White;
+            this.buttonTimNV.Location = new System.Drawing.Point(332, 3);
+            this.buttonTimNV.Name = "buttonTimNV";
+            this.buttonTimNV.Size = new System.Drawing.Size(180, 61);
+            this.buttonTimNV.TabIndex = 30;
+            this.buttonTimNV.Text = "Tìm";
+            this.buttonTimNV.Click += new System.EventHandler(this.buttonTimNV_Click_1);
             // 
             // label10
             // 
@@ -742,51 +743,17 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 33F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 139F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel3.Controls.Add(this.buttonThemNV, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.buttonSuaNhanVien, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.buttonXoaNV, 3, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(275, 414);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(536, 67);
             this.tableLayoutPanel3.TabIndex = 31;
-            // 
-            // buttonLoad
-            // 
-            this.buttonLoad.BorderRadius = 10;
-            this.buttonLoad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonLoad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonLoad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonLoad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonLoad.FillColor = System.Drawing.SystemColors.AppWorkspace;
-            this.buttonLoad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLoad.ForeColor = System.Drawing.Color.White;
-            this.buttonLoad.Location = new System.Drawing.Point(3, 3);
-            this.buttonLoad.Name = "buttonLoad";
-            this.buttonLoad.Size = new System.Drawing.Size(156, 61);
-            this.buttonLoad.TabIndex = 31;
-            this.buttonLoad.Text = "Làm mới";
-            this.buttonLoad.Click += new System.EventHandler(this.buttonLoad_Click_1);
-            // 
-            // buttonTimNV
-            // 
-            this.buttonTimNV.BorderRadius = 10;
-            this.buttonTimNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonTimNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonTimNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonTimNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonTimNV.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.buttonTimNV.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTimNV.ForeColor = System.Drawing.Color.White;
-            this.buttonTimNV.Location = new System.Drawing.Point(332, 3);
-            this.buttonTimNV.Name = "buttonTimNV";
-            this.buttonTimNV.Size = new System.Drawing.Size(180, 61);
-            this.buttonTimNV.TabIndex = 30;
-            this.buttonTimNV.Text = "Tìm";
-            this.buttonTimNV.Click += new System.EventHandler(this.buttonTimNV_Click_1);
             // 
             // buttonThemNV
             // 
@@ -806,6 +773,41 @@
             this.buttonThemNV.Text = "Thêm";
             this.buttonThemNV.Click += new System.EventHandler(this.buttonThemNV_Click);
             // 
+            // buttonSuaNhanVien
+            // 
+            this.buttonSuaNhanVien.BorderRadius = 10;
+            this.buttonSuaNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSuaNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonSuaNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonSuaNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonSuaNhanVien.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSuaNhanVien.ForeColor = System.Drawing.Color.White;
+            this.buttonSuaNhanVien.Location = new System.Drawing.Point(177, 2);
+            this.buttonSuaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSuaNhanVien.Name = "buttonSuaNhanVien";
+            this.buttonSuaNhanVien.Size = new System.Drawing.Size(128, 63);
+            this.buttonSuaNhanVien.TabIndex = 0;
+            this.buttonSuaNhanVien.Text = "Sửa";
+            this.buttonSuaNhanVien.Click += new System.EventHandler(this.buttonSuaNhanVien_Click);
+            // 
+            // buttonXoaNV
+            // 
+            this.buttonXoaNV.BorderRadius = 10;
+            this.buttonXoaNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.buttonXoaNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.buttonXoaNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.buttonXoaNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.buttonXoaNV.FillColor = System.Drawing.Color.Red;
+            this.buttonXoaNV.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonXoaNV.ForeColor = System.Drawing.Color.White;
+            this.buttonXoaNV.Location = new System.Drawing.Point(365, 2);
+            this.buttonXoaNV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonXoaNV.Name = "buttonXoaNV";
+            this.buttonXoaNV.Size = new System.Drawing.Size(133, 63);
+            this.buttonXoaNV.TabIndex = 1;
+            this.buttonXoaNV.Text = "Xóa";
+            this.buttonXoaNV.Click += new System.EventHandler(this.buttonXoaNV_Click);
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.ColumnCount = 1;
@@ -817,12 +819,13 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 67F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(447, 67);
             this.tableLayoutPanel4.TabIndex = 32;
             // 
             // texBoxMaNV
             // 
+            this.texBoxMaNV.BorderRadius = 15;
             this.tableLayoutPanel4.SetColumnSpan(this.texBoxMaNV, 2);
             this.texBoxMaNV.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.texBoxMaNV.DefaultText = "";
@@ -836,10 +839,11 @@
             this.texBoxMaNV.Location = new System.Drawing.Point(4, 5);
             this.texBoxMaNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.texBoxMaNV.Name = "texBoxMaNV";
-            this.texBoxMaNV.PlaceholderText = "";
+            this.texBoxMaNV.PlaceholderText = "Nhập mã nhân viên";
             this.texBoxMaNV.SelectedText = "";
             this.texBoxMaNV.Size = new System.Drawing.Size(439, 56);
             this.texBoxMaNV.TabIndex = 1;
+            this.texBoxMaNV.TextChanged += new System.EventHandler(this.texBoxMaNV_TextChanged);
             // 
             // labelMaNV
             // 
